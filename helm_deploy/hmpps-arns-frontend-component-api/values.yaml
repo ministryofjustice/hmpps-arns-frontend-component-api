@@ -15,7 +15,7 @@ generic-service:
   ingress:
     enabled: true
     host: app-hostname.local # override per environment
-    tlsSecretName: hmpps-arns-frontend-component-api-cert
+    tlsSecretName: hmpps-arns-frontend-components-cert
 
   livenessProbe:
     httpGet:
@@ -46,7 +46,7 @@ generic-service:
       CLIENT_CREDS_CLIENT_SECRET: 'CLIENT_CREDS_CLIENT_SECRET'
     hmpps-arns-frontend-component-api-auth-code:
       AUTH_CODE_CLIENT_ID: 'AUTH_CODE_CLIENT_ID'
-      AUTH_CODE_CLIENT_SECRET: 'AUTH_CODE_CLIENT_SECRET'    
+      AUTH_CODE_CLIENT_SECRET: 'AUTH_CODE_CLIENT_SECRET'
     hmpps-arns-frontend-component-api-session-secret:
       SESSION_SECRET: 'SESSION_SECRET'
     hmpps-arns-frontend-component-api-elasticache-redis:
