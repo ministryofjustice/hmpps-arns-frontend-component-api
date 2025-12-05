@@ -5,7 +5,6 @@ import { login, resetStubs } from '../testUtils'
 import HomePage from '../pages/homePage'
 
 test.describe('SignIn', () => {
-
   test.afterEach(async () => {
     await resetStubs()
   })
