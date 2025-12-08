@@ -1,7 +1,7 @@
-# hmpps-arns-frontend-component-api
+# hmpps-arns-frontend-components
 
-[![Ministry of Justice Repository Compliance Badge](https://github-community.service.justice.gov.uk/repository-standards/api/hmpps-arns-frontend-component-api/badge?style=flat)](https://github-community.service.justice.gov.uk/repository-standards/hmpps-arns-frontend-component-api)
-[![Docker Repository on ghcr](https://img.shields.io/badge/ghcr.io-repository-2496ED.svg?logo=docker)](https://ghcr.io/ministryofjustice/hmpps-arns-frontend-component-api)
+[![Ministry of Justice Repository Compliance Badge](https://github-community.service.justice.gov.uk/repository-standards/api/hmpps-arns-frontend-components/badge?style=flat)](https://github-community.service.justice.gov.uk/repository-standards/hmpps-arns-frontend-components)
+[![Docker Repository on ghcr](https://img.shields.io/badge/ghcr.io-repository-2496ED.svg?logo=docker)](https://ghcr.io/ministryofjustice/hmpps-arns-frontend-components)
 
 Template github repo used for new Typescript based projects.
 
@@ -14,7 +14,7 @@ Documentation to create new services is located [here](https://tech-docs.hmpps.s
 This project is community managed by the mojdt `#typescript` slack channel.
 Please raise any questions or queries there. Contributions welcome!
 
-Our security policy is located [here](https://github.com/ministryofjustice/hmpps-arns-frontend-component-api/security/policy).
+Our security policy is located [here](https://github.com/ministryofjustice/hmpps-arns-frontend-components/security/policy).
 
 More information about the template project including features can be
 found [here](https://dsdmoj.atlassian.net/wiki/spaces/NDSS/pages/3488677932/Typescript+template+project).
@@ -145,7 +145,7 @@ Then run the server in test mode by:
 
 `npm run start-feature` (or `npm run start-feature:dev` to run with auto-restart on changes)
 
-After first install ensure playwright is initialised: 
+After first install ensure playwright is initialised:
 
 `npm run int-test-init:ci`
 

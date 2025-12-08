@@ -1,21 +1,21 @@
 generic-service:
-  nameOverride: hmpps-arns-frontend-component-api
+  nameOverride: hmpps-arns-frontend-components
   productId: 'HMPPS509' # productId for the product that this belongs too, i.e. DPS001, see README.md for details
 
   # the IRSA service account name for accessing AWS resources
-  # serviceAccountName: "hmpps-arns-frontend-component-api"
+  # serviceAccountName: "hmpps-arns-frontend-components"
 
   replicaCount: 4
 
   image:
-    repository: ghcr.io/ministryofjustice/hmpps-arns-frontend-component-api
+    repository: ghcr.io/ministryofjustice/hmpps-arns-frontend-components
     tag: app_version # override at deployment time
     port: 3000
 
   ingress:
     enabled: true
     host: app-hostname.local # override per environment
-    tlsSecretName: hmpps-arns-frontend-component-api-cert
+    tlsSecretName: hmpps-arns-frontend-components-cert
 
   livenessProbe:
     httpGet:
@@ -41,18 +41,18 @@ generic-service:
 
   namespace_secrets:
     # These secrets are created by terraform.
-    hmpps-arns-frontend-component-api-client-creds:
+    hmpps-arns-frontend-components-client-creds:
       CLIENT_CREDS_CLIENT_ID: 'CLIENT_CREDS_CLIENT_ID'
       CLIENT_CREDS_CLIENT_SECRET: 'CLIENT_CREDS_CLIENT_SECRET'
-    hmpps-arns-frontend-component-api-auth-code:
+    hmpps-arns-frontend-components-auth-code:
       AUTH_CODE_CLIENT_ID: 'AUTH_CODE_CLIENT_ID'
-      AUTH_CODE_CLIENT_SECRET: 'AUTH_CODE_CLIENT_SECRET'    
-    hmpps-arns-frontend-component-api-session-secret:
+      AUTH_CODE_CLIENT_SECRET: 'AUTH_CODE_CLIENT_SECRET'
+    hmpps-arns-frontend-components-session-secret:
       SESSION_SECRET: 'SESSION_SECRET'
-    hmpps-arns-frontend-component-api-elasticache-redis:
+    hmpps-arns-frontend-components-elasticache-redis:
       REDIS_HOST: 'primary_endpoint_address'
       REDIS_AUTH_TOKEN: 'auth_token'
-    hmpps-arns-frontend-component-api-application-insights:
+    hmpps-arns-frontend-components-application-insights:
       APPLICATIONINSIGHTS_CONNECTION_STRING: "APPLICATIONINSIGHTS_CONNECTION_STRING"
     # This secret will need to be created in your namespace (note it isn't in hmpps-templates-dev)
     # IRSA configuration in your namespace will also be required, and then uncomment serviceAccountName above.
@@ -64,4 +64,4 @@ generic-service:
       - internal
 
 generic-prometheus-alerts:
-  targetApplication: hmpps-arns-frontend-component-api
+  targetApplication: hmpps-arns-frontend-components

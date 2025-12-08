@@ -1,8 +1,8 @@
 {
-  "name": "hmpps-arns-frontend-component-api",
+  "name": "hmpps-arns-frontend-components",
   "version": "0.0.1",
   "description": "HMPPS Arns Frontend Component Api",
-  "repository": "git@github.com:ministryofjustice/hmpps-arns-frontend-component-api.git",
+  "repository": "git@github.com:ministryofjustice/hmpps-arns-frontend-components.git",
   "license": "MIT",
   "scripts": {
     "prepare": "hmpps-precommit-hooks-prepare",
