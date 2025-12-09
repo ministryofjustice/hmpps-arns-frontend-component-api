@@ -1,0 +1,16 @@
+{% extends "layouts/layout.njk" %}
+{%- from "moj/components/side-navigation/macro.njk" import mojSideNavigation -%}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+      {{ mojSideNavigation({
+        label: "Side navigation",
+        sections: navSections
+      }) }}
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      {% block sideNavContent %}{% endblock %}
+    </div>
+  </div>
+{% endblock %}

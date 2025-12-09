@@ -1,0 +1,22 @@
+{% extends "layouts/side-nav-layout.njk" %}
+{% from "../partials/rosh-widget/macro.njk" import roshWidget %}
+
+{% set pageTitle = "Rosh widget" %}
+{% set mainClasses = "govuk-body" %}
+
+{% block sideNavContent %}
+  <h1 class="govuk-heading-xl">
+    {{ pageTitle }}
+  </h1>
+  <div id="rosh-widget-wrapper" class="govuk-grid-row">
+    <div id="rosh-widget" class="govuk-grid-column-one-third">
+      {{ roshWidget(widgetData.roshRiskSummary) }}
+    </div>
+    <div id="rosh-widget-no-matching-data" class="govuk-grid-column-one-third">
+      {{ roshWidget(widgetData) }}
+    </div>
+    <div id="rosh-widget-null-data" class="govuk-grid-column-one-third">
+      {{ roshWidget() }}
+    </div>
+  </div>
+{% endblock %}

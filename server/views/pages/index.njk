@@ -1,11 +1,12 @@
-{% extends "../partials/layout.njk" %}
+{% extends "layouts/side-nav-layout.njk" %}
 
-{% set pageTitle = applicationName + " - Home" %}
+{% set pageTitle = "Intro" %}
 {% set mainClasses = "govuk-body" %}
 
-{% block content %}
+{% block sideNavContent %}
 
-  <h1>This site is under construction...</h1>
-  <p>Please check back later when there is content to view.</p>
+  <h1 class="govuk-heading-xl">
+    {{ pageTitle }}
+  </h1>
 
 {% endblock %}

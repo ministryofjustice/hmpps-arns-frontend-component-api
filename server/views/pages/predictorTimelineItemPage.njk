@@ -1,0 +1,20 @@
+{% extends "layouts/side-nav-layout.njk" %}
+{% from "../partials/predictor-timeline-item/macro.njk" import predictorTimelineItem %}
+
+{% set pageTitle = "Predictor timeline item" %}
+{% set mainClasses = "govuk-body" %}
+
+{% block sideNavContent %}
+  <h1 class="govuk-heading-xl">
+    {{ pageTitle }}
+  </h1>
+  <div class="govuk-grid-column-full">
+    {{ predictorTimelineItem(riskScores.historical[0].scores.RSR) }}
+  </div>
+  <div class="govuk-grid-column-full">
+    {{ predictorTimelineItem(riskScores.historical[0].scores.OSPDC) }}
+  </div>
+  <div class="govuk-grid-column-full">
+    {{ predictorTimelineItem(riskScores.historical[0].scores.OSPIIC) }}
+  </div>
+{% endblock %}

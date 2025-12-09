@@ -1,0 +1,22 @@
+{% extends "layouts/side-nav-layout.njk" %}
+{% from "../partials/risk-flag-widget/macro.njk" import riskFlagWidget %}
+
+{% set pageTitle = "Risk flag widget" %}
+{% set mainClasses = "govuk-body" %}
+
+{% block sideNavContent %}
+  <h1 class="govuk-heading-xl">
+    {{ pageTitle }}
+  </h1>
+  <div id="risk-flag-widget-wrapper" class="govuk-grid-row">
+    <div id="risk-flag-widget" class="govuk-grid-column-one-third">
+      {{ riskFlagWidget(widgetData.flags) }}
+    </div>
+    <div id="risk-flag-widget-no-matching-data" class="govuk-grid-column-one-third">
+      {{ riskFlagWidget(widgetData) }}
+    </div>
+    <div id="risk-flag-widget-null-data" class="govuk-grid-column-one-third">
+      {{ riskFlagWidget() }}
+    </div>
+  </div>
+{% endblock %}

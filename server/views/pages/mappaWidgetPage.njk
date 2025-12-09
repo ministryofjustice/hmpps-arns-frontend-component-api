@@ -1,0 +1,22 @@
+{% extends "layouts/side-nav-layout.njk" %}
+{% from "../partials/mappa-widget/macro.njk" import mappaWidget %}
+
+{% set pageTitle = "Mappa widget" %}
+{% set mainClasses = "govuk-body" %}
+
+{% block sideNavContent %}
+  <h1 class="govuk-heading-xl">
+    {{ pageTitle }}
+  </h1>
+  <div id="mappa-widget-wrapper" class="govuk-grid-row">
+    <div id="mappa-widget" class="govuk-grid-column-one-third">
+      {{ mappaWidget(widgetData.mappa) }}
+    </div>
+    <div id="mappa-widget-no-matching-data" class="govuk-grid-column-one-third">
+      {{ mappaWidget(widgetData) }}
+    </div>
+    <div id="mappa-widget-null-data" class="govuk-grid-column-one-third">
+      {{ mappaWidget() }}
+    </div>
+  </div>
+{% endblock %}

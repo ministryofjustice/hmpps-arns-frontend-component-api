@@ -1,0 +1,22 @@
+{% extends "layouts/side-nav-layout.njk" %}
+{% from "../partials/predictor-scores-indicator/macro.njk" import predictorIndicator %}
+
+{% set pageTitle = "Predictor scores indicator" %}
+{% set mainClasses = "govuk-body" %}
+
+{% block sideNavContent %}
+  <h1 class="govuk-heading-xl">
+    {{ pageTitle }}
+  </h1>
+  <div id="predictor-scores-indicator-wrapper" class="govuk-grid-row">
+    <div id="predictor-scores-indicator" class="govuk-grid-column-one-third">
+      {{ predictorIndicator(riskScores.current.scores.RSR) }}
+    </div>
+    <div id="predictor-scores-indicator" class="govuk-grid-column-one-third">
+      {{ predictorIndicator(riskScores.current.scores.OSPDC) }}
+    </div>
+    <div id="predictor-scores-indicator" class="govuk-grid-column-one-third">
+      {{ predictorIndicator(riskScores.current.scores.OSPIIC) }}
+    </div>
+  </div>
+{% endblock %}

@@ -18,6 +18,7 @@ import setUpWebSession from './middleware/setUpWebSession'
 
 import routes from './routes'
 import type { Services } from './services'
+import partialsPages from './routes/partialsPages'
 
 export default function createApp(services: Services): express.Application {
   const app = express()
@@ -38,10 +39,15 @@ export default function createApp(services: Services): express.Application {
   app.use(setUpCsrf())
   app.use(setUpCurrentUser())
 
+  app.use((req, res, next) => {
+    res.locals.currentPath = req.path
+    next()
+  })
+
   app.use(routes())
+  app.use(partialsPages())
 
   app.use((req, res, next) => next(createError(404, 'Not found')))
   app.use(errorHandler(process.env.NODE_ENV === 'production'))
-
   return app
 }

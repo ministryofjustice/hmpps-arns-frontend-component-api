@@ -31,7 +31,13 @@ describe('GET /', () => {
       .expect('Content-Type', /html/)
       .expect(200)
       .expect(res => {
-        expect(res.text).toContain('This site is under construction...')
+        expect(res.text).toContain('<title>Intro</title>')
       })
+  })
+})
+
+describe('GET /nonexistent-route', () => {
+  it('should return 404 Not Found', () => {
+    return request(app).get('/nonexistent-route').expect(404)
   })
 })

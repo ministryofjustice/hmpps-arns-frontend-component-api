@@ -1,10 +1,13 @@
 import { Router } from 'express'
+import { activateMojNav } from '../utils/navHelper'
+import rawNavSections from '../data/navData'
 
 export default function routes(): Router {
   const router = Router()
 
   router.get('/', async (req, res, next) => {
-    return res.render('pages/index')
+    const navSections = activateMojNav(rawNavSections, req.path)
+    return res.render('pages/index', { navSections })
   })
 
   return router
