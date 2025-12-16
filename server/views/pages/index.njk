@@ -1,6 +1,6 @@
 {% extends "layouts/side-nav-layout.njk" %}
 
-{% set pageTitle = "Intro" %}
+{% set pageTitle = "Introduction" %}
 {% set mainClasses = "govuk-body" %}
 
 {% block sideNavContent %}
@@ -8,5 +8,16 @@
   <h1 class="govuk-heading-xl">
     {{ pageTitle }}
   </h1>
+  <p>
+    The ARNS frontend components service documents design elements to be used in downstream systems along the Gov.UK and MOJ design systems. This should be used in conjunction with the following guide in Confluence - <a href="https://dsdmoj.atlassian.net/wiki/spaces/NDSS/pages/5980553390/Visualising+risk+for+the+updated+risk+predictor+tools">Visualising risk for the updated risk predictor tools</a>
+  </p>
+
+  <h2 class="govuk-heading-l">Using components</h2>
+  <p>
+    For guidance on getting started use the readme in <a href="https://github.com/ministryofjustice/hmpps-arns-frontend-components">GitHub</a>
+  </p>
+  <p>
+    Select a component for details on how to include in your service and example code.
+  </p>
 
 {% endblock %}

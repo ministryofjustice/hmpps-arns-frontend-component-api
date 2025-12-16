@@ -2,44 +2,51 @@ import { NavSection } from '../utils/navHelper'
 
 const rawNavSections: NavSection[] = [
   {
+    heading: { text: 'Overview' },
+    items: [
+      {
+        text: 'Introduction',
+        href: '/',
+      }
+    ]
+  },
+  {
     heading: { text: 'Components' },
     items: [
       {
-        text: 'Intro',
-        href: '/',
+        text: 'MAPPA widget',
+        href: '/mappa-widget',
       },
+      {
+        text: 'Risk flag widget',
+        href: '/risk-flag-widget',
+      },
+      {
+        text: 'ROSH widget',
+        href: '/rosh-widget',
+      },
+
     ],
   },
   {
     heading: { text: 'Legacy components' },
     items: [
+
       {
-        text: 'mappa-widget',
-        href: '/mappa-widget',
-      },
-      {
-        text: 'predictor-scores',
+        text: 'Predictor scores',
         href: '/predictor-scores',
       },
       {
-        text: 'predictor-scores-indicator',
+        text: 'Predictor scores indicator',
         href: '/predictor-scores-indicator',
       },
       {
-        text: 'predictor-timeline',
+        text: 'Predictor timeline',
         href: '/predictor-timeline',
       },
       {
-        text: 'predictor-timeline-item',
+        text: 'Predictor timeline item',
         href: '/predictor-timeline-item',
-      },
-      {
-        text: 'risk-flag-widget',
-        href: '/risk-flag-widget',
-      },
-      {
-        text: 'rosh-widget',
-        href: '/rosh-widget',
       },
     ],
   },

@@ -6,7 +6,7 @@ export default function routes(): Router {
   const router = Router()
 
   router.get('/', async (req, res, next) => {
-    const navSections = activateMojNav(rawNavSections, req.path)
+    const navSections = activateMojNav(rawNavSections, '/')
     return res.render('pages/index', { navSections })
   })
 
