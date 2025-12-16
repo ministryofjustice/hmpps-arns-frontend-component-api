@@ -1,6 +1,7 @@
 {% extends "layouts/side-nav-layout.njk" %}
 {% from "../partials/predictor-scores/macro.njk" import predictorScore %}
 {% from "../partials/predictor-scores-indicator/macro.njk" import predictorIndicator %}
+{%- from "moj/components/alert/macro.njk" import mojAlert -%}
 
 {% set pageTitle = "Predictor scores" %}
 {% set mainClasses = "govuk-body" %}
@@ -10,6 +11,13 @@
     {{ pageTitle }}
   </h1>
   <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      {{ mojAlert({
+        variant: "warning",
+        title: "These components are deprecated",
+        html: 'These components are deprecated and have been replaced by <a href="#">TODO</a>.'
+      }) }}
+    </div>
     <div class="govuk-grid-column-full">
       <h2 class="govuk-heading-l score-header">RSR score</h2>
       {{ predictorScore(riskScores.current.scores.RSR) }}

@@ -1,5 +1,6 @@
 {% extends "layouts/side-nav-layout.njk" %}
 {% from "../partials/predictor-timeline-item/macro.njk" import predictorTimelineItem %}
+{%- from "moj/components/alert/macro.njk" import mojAlert -%}
 
 {% set pageTitle = "Predictor timeline item" %}
 {% set mainClasses = "govuk-body" %}
@@ -8,6 +9,13 @@
   <h1 class="govuk-heading-xl">
     {{ pageTitle }}
   </h1>
+  <div class="govuk-grid-column-full">
+    {{ mojAlert({
+      variant: "warning",
+      title: "These components are deprecated",
+      html: 'These components are deprecated and have been replaced by <a href="#">TODO</a>.'
+    }) }}
+  </div>
   <div class="govuk-grid-column-full">
     {{ predictorTimelineItem(riskScores.historical[0].scores.RSR) }}
   </div>

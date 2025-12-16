@@ -6,12 +6,12 @@ describe('activateMojNav', () => {
     const result = activateMojNav(rawNavSections, '/')
 
     // Check activated item
-    expect(result[0].items[0].text).toBe('Intro')
+    expect(result[0].items[0].text).toBe('Introduction')
     expect(result[0].items[0].href).toBe('/')
     expect(result[0].items[0].active).toBe(true)
 
     // Check other items not active
-    result[0].items.filter(item => item.text !== 'Intro').forEach(item => expect(item.active).toBeUndefined())
+    result[0].items.filter(item => item.text !== 'Introduction').forEach(item => expect(item.active).toBeUndefined())
     result[1].items.forEach(item => expect(item.active).toBeUndefined())
   })
 
@@ -19,19 +19,19 @@ describe('activateMojNav', () => {
     const result = activateMojNav(rawNavSections, '/mappa-widget')
 
     // Check activated item
-    expect(result[1].items[0].text).toBe('mappa-widget')
+    expect(result[1].items[0].text).toBe('MAPPA widget')
     expect(result[1].items[0].href).toBe('/mappa-widget')
     expect(result[1].items[0].active).toBe(true)
 
     // Check other items not active
     result[0].items.forEach(item => expect(item.active).toBeUndefined())
-    result[1].items.filter(item => item.text !== 'mappa-widget').forEach(item => expect(item.active).toBeUndefined())
+    result[1].items.filter(item => item.text !== 'MAPPA widget').forEach(item => expect(item.active).toBeUndefined())
   })
 
   it('should return the original array structure with no items active if path is not found', () => {
     const result = activateMojNav(rawNavSections, '/non-existent-page')
 
-    expect(result.length).toBe(2)
+    expect(result.length).toBe(3)
 
     // Check items not active
     expect(result.some(section => section.items.some(item => item.active))).toBe(false)
