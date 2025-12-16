@@ -8,6 +8,14 @@ const rawNavSections: NavSection[] = [
         text: 'Intro',
         href: '/',
       },
+      {
+        text: 'Predictor Badge',
+        href: '/predictor-badge',
+      },
+      {
+        text: 'Expanded Predictor Badge',
+        href: '/expanded-predictor-badge',
+      },
     ],
   },
   {

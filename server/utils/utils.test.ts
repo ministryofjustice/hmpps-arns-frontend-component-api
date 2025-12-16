@@ -1,4 +1,4 @@
-import { convertToTitleCase, initialiseName } from './utils'
+import { convertToTitleCase, initialiseName, govukDate } from './utils'
 
 describe('convert to title case', () => {
   it.each([
@@ -26,5 +26,29 @@ describe('initialise name', () => {
     ['Double barrelled', 'Robert-John Smith-Jones-Wilson', 'R. Smith-Jones-Wilson'],
   ])('%s initialiseName(%s, %s)', (_: string, a: string, expected: string) => {
     expect(initialiseName(a)).toEqual(expected)
+  })
+})
+
+describe('govukDate', () => {
+  it('formats a valid ISO date string into GOV.UK style', () => {
+    expect(govukDate('2025-12-16')).toBe('16 December 2025')
+  })
+
+  it('formats a JavaScript Date object', () => {
+    const date = new Date(2025, 11, 16)
+    expect(govukDate(date)).toBe('16 December 2025')
+  })
+
+  it('returns an empty string when date is null or undefined', () => {
+    expect(govukDate(null as unknown as string)).toBe('')
+    expect(govukDate(undefined as unknown as string)).toBe('')
+  })
+
+  it('returns an empty string when date is an invalid string', () => {
+    expect(govukDate('not-a-date')).toBe('')
+  })
+
+  it('handles single digit days correctly', () => {
+    expect(govukDate('2025-01-05')).toBe('5 January 2025')
   })
 })

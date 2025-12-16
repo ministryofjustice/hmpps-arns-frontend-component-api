@@ -1,0 +1,44 @@
+{% if predictor %}
+
+  {% set badgeClass = '' %}
+
+  {% switch predictor.level %}
+  {% case 'VERY_HIGH' %}
+    {% set badgeClass = 'predictor-badge--very-high' %}
+  {% case 'HIGH' %}
+    {% set badgeClass = 'predictor-badge--high' %}
+  {% case 'MEDIUM' %}
+    {% set badgeClass = 'predictor-badge--medium' %}
+  {% case 'LOW' %}
+    {% set badgeClass = 'predictor-badge--low' %}
+  {% endswitch %}
+
+
+  {% if asAcronym %}
+    {% set words = predictor.type.split(' ') %}
+    {% set acronym = "" %}
+
+    {% for word in words %}
+      {% if word.length > 0 %}
+        {% set letter = word | first %}
+        {% set acronym = acronym + letter %}
+      {% endif %}
+    {% endfor %}
+
+    {% set predictorTypeText = acronym | upper %}
+  {% else %}
+    {% set predictorTypeText = predictor.type | upper %}
+  {% endif %}
+
+  <div class="{{ badgeClass }}">
+    <span
+      class="predictor-badge__type_and_level">{{ predictorTypeText }} <strong>{{ predictor.level | replace('_', ' ') }}</strong></span>
+
+    {% if showScore %}
+      <span class="predictor-badge__score">{{ predictor.score }}%</span>
+    {% endif %}
+
+    <span class="predictor-badge__static_or_dynamic">{{ predictor.staticOrDynamic | capitalize }}</span>
+
+  </div>
+{% endif %}
