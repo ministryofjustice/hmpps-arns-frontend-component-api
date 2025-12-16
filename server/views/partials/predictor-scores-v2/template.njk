@@ -1,0 +1,87 @@
+{% from "partials/predictor-scores-indicator-v2/macro.njk" import predictorIndicatorV2 %}
+{%- from "govuk/components/tag/macro.njk" import govukTag -%}
+
+{% set scoreLabelClass = '' %}
+{% set staticOrDynamic = 'Dynamic' if predictorScore.isDynamic else 'Static' %}
+
+{% if ['RSR'].includes(predictorScore.type) %}
+  {% switch predictorScore.level %}
+  {% case 'LOW' %}
+    {% set scoreLabelClass = 'score-label-wrapper-v2--low score-label-wrapper-v2--position-one-of-three' %}
+  {% case 'MEDIUM' %}
+    {% set scoreLabelClass = 'score-label-wrapper-v2--medium score-label-wrapper-v2--position-two-of-three' %}
+  {% case 'HIGH' %}
+    {% set scoreLabelClass = 'score-label-wrapper-v2--high score-label-wrapper-v2--position-three-of-three' %}
+  {% endswitch %}
+  {% elif ['OSP/C', 'OSP/DC',  'OSP/I', 'OSP/IIC', 'SNSV', 'OGRS4'].includes(predictorScore.type) %}
+  {% switch predictorScore.level %}
+  {% case 'LOW'%}
+    {% set scoreLabelClass = 'score-label-wrapper-v2--low score-label-wrapper-v2--position-one-of-four' %}
+  {% case 'MEDIUM' %}
+    {% set scoreLabelClass = 'score-label-wrapper-v2--medium score-label-wrapper-v2--position-two-of-four' %}
+  {% case 'HIGH' %}
+    {% set scoreLabelClass = 'score-label-wrapper-v2--high score-label-wrapper-v2--position-three-of-four' %}
+  {% case 'VERY_HIGH' %}{% case 'VERY HIGH' %}
+    {% set scoreLabelClass = 'score-label-wrapper-v2--very-high score-label-wrapper-v2--position-four-of-four' %}
+  {% endswitch %}
+{% endif %}
+
+{% set barTypeClass = '' %}
+
+{% switch predictorScore.type %}
+{% case 'RSR' %}
+  {% set barTypeClass = 'score-bar-v2-rsr' %}
+  {% set showScore = true %}
+{% case 'OGRS4' %}
+  {% set barTypeClass = 'score-bar-v2-all' %}
+  {% set showScore = true %}
+{% case 'OSP/C' %}{% case 'OSP/DC' %}{% case 'OSP/I' %}{% case 'OSP/IIC' %}{% case 'SNSV' %}
+  {% set barTypeClass = 'score-bar-v2--small score-bar-v2--small-fourths' %}
+  {% set showScore = false %}
+
+{% endswitch %}
+{% if predictorScore.level === 'NOT_APPLICABLE' %}
+  <div class="predictor-score-v2 govuk-body">
+    <p class="govuk-body">No relevant sexual offences</p>
+  </div>
+{% else %}
+  <div class="predictor-score-v2 govuk-body">
+
+    <div class="predictor-scores-v2-header-wrapper">
+      <div>
+        <h2 class="govuk-heading-m">{{ predictorScore.title }}</h2>
+        <p class="govuk-hint">Last updated: {{ predictorScore.updateDate }}</p>
+      </div>
+      <div>{{ govukTag({ text: staticOrDynamic, classes: "govuk-tag--grey"}) }}</div>
+    </div>
+
+    <div class="score-label-v2">
+      <div class="{{ scoreLabelClass }}">
+        {{ predictorIndicatorV2(predictorScore, showScore) }}
+      </div>
+    </div>
+
+    <div class="{{ barTypeClass }}">
+      <div>
+        <span></span>
+      </div>
+      <div>
+        <span></span>
+      </div>
+      <div>
+        <span></span>
+      </div>
+      {% if predictorScore.type === 'OSP/C' or
+        predictorScore.type === 'OSP/DC' or
+        predictorScore.type === 'OSP/I' or
+        predictorScore.type === 'OSP/IIC' or
+        predictorScore.type === 'SNSV' or
+        predictorScore.type === 'OGRS4'
+      %}
+        <div>
+          <span></span>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+{% endif %}

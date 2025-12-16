@@ -25,6 +25,10 @@ const rawNavSections: NavSection[] = [
         text: 'ROSH widget',
         href: '/rosh-widget',
       },
+      {
+        text: 'Predictor scores v2',
+        href: '/predictor-scores-v2',
+      },
     ],
   },
   {

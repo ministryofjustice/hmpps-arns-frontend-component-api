@@ -70,6 +70,54 @@ export default function componentPageRoutes(): Router {
     ],
   }
 
+  const riskScoresV2 = {
+    current: {
+      date: '23 Jul 2021 at 12:00:00',
+      scores: {
+        RSR: {
+          level: 'HIGH',
+          score: 11.34,
+          type: 'RSR',
+          title: 'Combined Serious Reoffending Predictor',
+          updateDate: "19 December 2024",
+          isDynamic: true
+        },
+        OSPDC: {
+          level: 'MEDIUM',
+          score: 8.76,
+          type: 'OSP/DC',
+          title: 'Direct Contact - Sexual Reoffending Predictor',
+          updateDate: "19 December 2024",
+          isDynamic: true
+        },
+        OSPIIC: {
+          level: 'LOW',
+          score: 3.45,
+          type: 'OSP/IIC',
+          title: 'Images and Indirect Contact - Sexual Reoffending Predictor',
+          updateDate: "19 December 2024",
+          isDynamic: false
+        },
+        SNSV: {
+          level: 'VERY HIGH',
+          score: 3.45,
+          type: 'SNSV',
+          title: 'Serious Violent Reoffending Predictor',
+          updateDate: "19 December 2024",
+          isDynamic: true
+        },
+        OGRS4: {
+          level: 'HIGH',
+          score: 3.45,
+          type: 'OGRS4',
+          title: 'All Reoffending Predictor',
+          updateDate: "19 December 2024",
+          isDynamic: false
+        },
+      },
+    }
+  }
+
   const widgetData = {
     roshRiskSummary: {
       hasBeenCompleted: true,
@@ -124,6 +172,10 @@ export default function componentPageRoutes(): Router {
   router.get('/rosh-widget', async (req, res) => {
     const navSections = activateMojNav(rawNavSections, req.path)
     res.render('pages/roshWidgetPage', { widgetData, navSections })
+  })
+  router.get('/predictor-scores-v2', async (req, res) => {
+    const navSections = activateMojNav(rawNavSections, req.path)
+    res.render('pages/predictorScoresV2Page', { riskScoresV2, navSections })
   })
 
   return router

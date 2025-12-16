@@ -1,0 +1,504 @@
+$very-high-score-colour: #942514;
+$very-high-score-colour--light: #ffac9f;
+$very-high-score-colour__text: #711a0d;
+$high-score-colour: #d4351c;
+$high-score-colour--light: #f6d7d2;
+$high-score-colour__text: #942514;
+$medium-score-colour: #f47738;
+$medium-score-colour--light: #f9e8bd;
+$medium-score-colour__text: #a34e00;
+$low-score-colour: #85994b;
+$low-score-colour--light: #dee9bd;
+$low-score-colour__text: #485b10;
+$predictor-score-background-colour: #f3f2f1;
+$boarder-colour: #B1B4B6;
+
+@mixin score-label-v2-card-colour($primary-colour, $secondary-colour, $text-colour) {
+  & .score-label-v2__card {
+    border: 2px solid $primary-colour;
+
+    & .score-label-v2__card-top {
+      & h3,
+      & p {
+        color: $text-colour;
+      }
+    }
+
+    & .score-label-v2__card-bottom {
+      background-color: $secondary-colour;
+    }
+
+    & .score-label-v2__card-pointer {
+      border-top: 16px solid $primary-colour;
+    }
+
+    & .score-label-v2__card-pointer::after {
+      border-top: 14px solid $secondary-colour;
+    }
+  }
+}
+
+@mixin score-bar-label-v2 {
+  position: relative;
+  text-align: center;
+  display: block;
+  color: govuk-colour("black");
+}
+
+@mixin score-bar-base-v2 {
+  width: 100%;
+
+  &::after {
+    content: "" "";
+    display: block;
+    visibility: hidden;
+    clear: both;
+  }
+
+  & > div > span {
+    height: 15px;
+    display: block;
+  }
+}
+
+.predictor-scores-v2-header-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.predictor-score-v2 {
+  width: 100%;
+  padding: 30px 40px 10px;
+  box-sizing: border-box;
+  border: 1px solid $boarder-colour;
+}
+
+.score-label-v2__card-pointer {
+  width: 0;
+  height: 0;
+  border-right: 16px solid transparent;
+  border-left: 16px solid transparent;
+  border-top: 16px solid govuk-colour("black");
+  position: relative;
+  top: 0;
+  left: 23px;
+  float: left;
+}
+
+.score-label-v2__card-pointer--white::after {
+  border-top: 14px solid govuk-colour("white") !important;
+}
+
+.score-label-v2__card-pointer::after {
+  width: 0;
+  height: 0;
+  border-right: 14px solid transparent;
+  border-left: 14px solid transparent;
+  border-top: 14px solid govuk-colour("white");
+  position: absolute;
+  top: -17px;
+  left: -14px;
+  content: "";
+}
+
+.score-label-v2 {
+  margin-bottom: 22px;
+  width: 100%;
+}
+
+.score-label-wrapper-v2--position-one-of-three,
+.score-label-wrapper-v2--position-two-of-three,
+.score-label-wrapper-v2--position-three-of-three {
+  width: 33%;
+}
+
+.score-label-wrapper-v2--position-one-of-three {
+  margin-left: 0;
+}
+
+.score-label-wrapper-v2--position-two-of-three {
+  margin-left: 67%;
+}
+
+.score-label-wrapper-v2--position-three-of-three {
+  margin-left: 67%;
+}
+
+.score-label-wrapper-v2--position-one-of-four,
+.score-label-wrapper-v2--position-two-of-four,
+.score-label-wrapper-v2--position-three-of-four,
+.score-label-wrapper-v2--position-four-of-four {
+  width: 25%;
+}
+
+.score-label-wrapper-v2--position-one-of-four {
+  margin-left: 0;
+}
+
+.score-label-wrapper-v2--position-two-of-four {
+  margin-left: 25%;
+}
+
+.score-label-wrapper-v2--position-three-of-four {
+  margin-left: 50%;
+}
+
+.score-label-wrapper-v2--position-four-of-four {
+  margin-left: 75%;
+}
+
+.score-label-wrapper-v2--very-high {
+  @include score-label-v2-card-colour(
+      $very-high-score-colour,
+      $very-high-score-colour--light,
+      $very-high-score-colour__text
+  );
+}
+
+.score-label-wrapper-v2--high {
+  @include score-label-v2-card-colour($high-score-colour, $high-score-colour--light, $high-score-colour__text);
+}
+
+.score-label-wrapper-v2--medium {
+  @include score-label-v2-card-colour($medium-score-colour, $medium-score-colour--light, $medium-score-colour__text);
+}
+
+.score-label-wrapper-v2--low {
+  @include score-label-v2-card-colour($low-score-colour, $low-score-colour--light, $low-score-colour__text);
+}
+
+.score-label-v2__card {
+  width: 78px;
+  bottom: 30px;
+  margin: 0 auto;
+  background-color: govuk-colour("white");
+  border: 2px solid govuk-colour("black");
+}
+
+.score-label-v2__card-top {
+  width: 100%;
+
+  & h3,
+  & p {
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  & h3 {
+    @include govuk-font(14, "bold");
+  }
+
+  & p {
+    @include govuk-font(14, "regular");
+  }
+}
+
+.score-label-v2__card-bottom p {
+  @include govuk-font(14, "bold");
+
+  margin: 0;
+}
+
+.score-label-v2__card-top,
+.score-label-v2__card-bottom {
+  padding: 3px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.score-bar-v2--small {
+  @include score-bar-base-v2;
+
+  margin-bottom: 15px;
+
+  & > div {
+    width: 33%;
+    display: inline;
+    float: left;
+    border-right: 1px solid transparent;
+    box-sizing: border-box;
+  }
+
+  & > div:nth-child(4n + 1) > span:first-child {
+    &::after{
+      @include govuk-font(16);
+      @include score-bar-label-v2;
+
+      content:"LOW";
+      bottom: -15px;
+      color: $govuk-secondary-text-colour;
+    }
+    background-color: $low-score-colour;
+  }
+
+  & > div:nth-child(4n + 2) > span:first-child {
+    &::after{
+      @include govuk-font(16);
+      @include score-bar-label-v2;
+
+      content:"MEDIUM";
+      bottom: -15px;
+      color: $govuk-secondary-text-colour;
+    }
+    background-color: $medium-score-colour;
+  }
+
+  & > div:nth-child(4n + 3) > span:first-child {
+    &::after{
+      @include govuk-font(16);
+      @include score-bar-label-v2;
+
+      content:"HIGH";
+      bottom: -15px;
+      color: $govuk-secondary-text-colour;
+    }
+    background-color: $high-score-colour;
+  }
+}
+
+.score-bar-v2--small-fourths {
+  & > div {
+    width: 25%;
+    padding-bottom: 20px;
+  }
+
+  & > div:nth-child(4n + 4) > span:first-child {
+    &::after{
+      @include govuk-font(16);
+      @include score-bar-label-v2;
+
+      content:"VERY HIGH";
+      bottom: -15px;
+      color: $govuk-secondary-text-colour;
+    }
+    background-color: $very-high-score-colour;
+  }
+}
+
+.score-bar-v2-rsr {
+  @include score-bar-base-v2;
+
+  margin-bottom: 35px;
+
+  & > div {
+    width: 33%;
+    height: 30px;
+    display: inline;
+    float: left;
+    border-right: 1px solid govuk-colour("black");
+    box-sizing: border-box;
+  }
+
+  & > div:first-child {
+    border-left: 1px solid govuk-colour("black");
+  }
+
+  & > div:nth-child(4n + 1) {
+    &::before {
+      @include govuk-font(16);
+      @include score-bar-label-v2;
+
+      float: left;
+      content: "0%";
+      left: -5%;
+      bottom: -35px;
+    }
+
+    &::after {
+      @include govuk-font(16);
+      @include score-bar-label-v2;
+
+      float: right;
+      content: "3%";
+      right: -5%;
+      bottom: -20px;
+    }
+
+    & > span:first-child {
+      &::after{
+        @include govuk-font(16);
+        @include score-bar-label-v2;
+
+        content:"LOW";
+        bottom: -15px;
+        color: $govuk-secondary-text-colour;
+      }
+      background-color: $low-score-colour;
+    }
+  }
+
+  & > div:nth-child(4n + 2) {
+    &::after {
+      @include govuk-font(16);
+      @include score-bar-label-v2;
+
+      content: "6.9%";
+      float: right;
+      right: -11%;
+      bottom: -20px;
+    }
+
+    & > span:first-child {
+      &::after{
+        @include govuk-font(16);
+        @include score-bar-label-v2;
+
+        content:"MEDIUM";
+        bottom: -15px;
+        color: $govuk-secondary-text-colour;
+      }
+      background-color: $medium-score-colour;
+    }
+  }
+
+  & > div:nth-child(4n + 3) {
+    &::after {
+      @include govuk-font(16);
+      @include score-bar-label-v2;
+
+      float: right;
+      content: "25%+";
+      right: -12%;
+      bottom: -20px;
+    }
+
+    & > span:first-child {
+      &::after{
+        @include govuk-font(16);
+        @include score-bar-label-v2;
+
+        content:"HIGH";
+        bottom: -15px;
+        color: $govuk-secondary-text-colour;
+      }
+      background-color: $high-score-colour;
+    }
+  }
+}
+
+.score-bar-v2-all {
+  @include score-bar-base-v2;
+
+  margin-bottom: 35px;
+
+  & > div {
+    width: 25%;
+    height: 30px;
+    display: inline;
+    float: left;
+    border-right: 1px solid govuk-colour("black");
+    box-sizing: border-box;
+  }
+
+  & > div:first-child {
+    border-left: 1px solid govuk-colour("black");
+  }
+
+  & > div:nth-child(4n + 1) {
+    &::before {
+      @include govuk-font(16);
+      @include score-bar-label-v2;
+
+      float: left;
+      content: "0%";
+      left: -5%;
+      bottom: -35px;
+    }
+
+    &::after {
+      @include govuk-font(16);
+      @include score-bar-label-v2;
+
+      float: right;
+      content: "49%";
+      right: -5%;
+      bottom: -20px;
+    }
+
+    & > span:first-child {
+      &::after{
+        @include govuk-font(16);
+        @include score-bar-label-v2;
+
+        content:"LOW";
+        bottom: -15px;
+        color: $govuk-secondary-text-colour;
+      }
+      background-color: $low-score-colour;
+    }
+  }
+
+  & > div:nth-child(4n + 2) {
+    &::after {
+      @include govuk-font(16);
+      @include score-bar-label-v2;
+
+      content: "74%";
+      float: right;
+      right: -11%;
+      bottom: -20px;
+    }
+
+    & > span:first-child {
+      &::after{
+        @include govuk-font(16);
+        @include score-bar-label-v2;
+
+        content:"MEDIUM";
+        bottom: -15px;
+        color: $govuk-secondary-text-colour;
+      }
+      background-color: $medium-score-colour;
+    }
+  }
+
+  & > div:nth-child(4n + 3) {
+    &::after {
+      @include govuk-font(16);
+      @include score-bar-label-v2;
+
+      float: right;
+      content: "90%";
+      right: -12%;
+      bottom: -20px;
+    }
+
+    & > span:first-child {
+      &::after{
+        @include govuk-font(16);
+        @include score-bar-label-v2;
+
+        content:"HIGH";
+        bottom: -15px;
+        color: $govuk-secondary-text-colour;
+      }
+      background-color: $high-score-colour;
+    }
+  }
+
+  & > div:nth-child(4n + 4) {
+    &::after {
+      @include govuk-font(16);
+      @include score-bar-label-v2;
+
+      float: right;
+      content: "100%";
+      right: -12%;
+      bottom: -20px;
+    }
+
+    & > span:first-child {
+      &::after{
+        @include govuk-font(16);
+        @include score-bar-label-v2;
+
+        content:"VERY HIGH";
+        bottom: -15px;
+        color: $govuk-secondary-text-colour;
+      }
+      background-color: $very-high-score-colour;
+    }
+  }
+}
+

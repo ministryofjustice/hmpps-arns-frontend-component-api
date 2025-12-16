@@ -1,0 +1,13 @@
+<div class="score-label-v2__card">
+    <div class="score-label-v2__card-top">
+        <h3>{{ predictorScore.level }}</h3>
+    </div>
+    {% if showScore and predictorScore.score %}
+    <div class="score-label-v2__card-bottom">
+        <p>{{ predictorScore.score }}%</p>
+    </div>
+    <div class="score-label-v2__card-pointer"></div>
+    {% else %}
+    <div class="score-label-v2__card-pointer score-label-v2__card-pointer--white"></div>
+    {% endif %}
+</div>

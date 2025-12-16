@@ -1,0 +1,37 @@
+{% extends "layouts/side-nav-layout.njk" %}
+{% from "../partials/predictor-scores-v2/macro.njk" import predictorScoreV2 %}
+{% from "../partials/predictor-scores-indicator-v2/macro.njk" import predictorIndicatorV2 %}
+
+{% set pageTitle = "Predictor scales" %}
+{% set mainClasses = "govuk-body" %}
+
+{% block sideNavContent %}
+  <h1 class="govuk-heading-xl">
+    {{ pageTitle }}
+  </h1>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      {{ predictorScoreV2(riskScoresV2.current.scores.OGRS4) }}
+    </div>
+  </div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      {{ predictorScoreV2(riskScoresV2.current.scores.RSR) }}
+    </div>
+  </div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      {{ predictorScoreV2(riskScoresV2.current.scores.OSPDC) }}
+    </div>
+  </div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      {{ predictorScoreV2(riskScoresV2.current.scores.OSPIIC) }}
+    </div>
+  </div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      {{ predictorScoreV2(riskScoresV2.current.scores.SNSV) }}
+    </div>
+  </div>
+{% endblock %}
