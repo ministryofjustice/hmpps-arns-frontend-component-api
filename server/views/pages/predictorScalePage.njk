@@ -1,0 +1,182 @@
+{% extends "layouts/side-nav-layout.njk" %}
+{% from "../partials/predictor-scale/macro.njk" import predictorScale %}
+{% from "../partials/predictor-scale-marker/macro.njk" import predictorScaleMarker %}
+
+{% set pageTitle = "Predictor scales" %}
+{% set mainClasses = "govuk-body" %}
+
+{% block sideNavContent %}
+  <h1 class="govuk-heading-xl">
+    {{ pageTitle }}
+  </h1>
+
+  <div class="govuk-grid-column-full">
+    <h2>How to use</h2>
+    <p>Refer to the
+      <a href="https://dsdmoj.atlassian.net/wiki/spaces/NDSS/pages/4474143439/Risk+linear+scale">
+        Predictor scale
+      </a>
+      Confluence documentation for usage details.
+    </p>
+    <h3 class="govuk-heading-s">Nunjucks</h3>
+    <p>The predictor scale and the accompanying predictor scale marker Nunjucks macro's are available on GitHub.</p>
+    <ul>
+      <li>
+        <a href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/tree/main/server/views/partials/predictor-scale">
+          predictor scale Nunjucks macro github
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/tree/main/server/views/partials/predictor-scale">
+          predictor scale marker Nunjucks macro github
+        </a>
+      </li>
+    </ul>
+    <h3 class="govuk-heading-s">Styles</h3>
+    <p>
+      The
+      <a href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/main/assets/scss/partials/risk/_predictor-scale.scss">
+        predictor scale SCSS
+      </a>
+      is available on GitHub.
+    </p>
+    <h3>Input data format</h3>
+    <p>The predictor scale includes the following fields, which must follow the specified format:</p>
+
+    <ul>
+      <li>type</li>
+      <ul>
+        <li>OGRS4 generation predictor names (acronyms <strong>not</strong> allowed):</li>
+        <ul>
+          <li>All Reoffending Predictor</li>
+          <li>Combined Serious Reoffending Predictor</li>
+          <li>Violent Reoffending Predictor</li>
+          <li>Direct Contact – Sexual Reoffending Predictor</li>
+          <li>Images and Indirect Contact – Sexual Reoffending Predictor</li>
+        </ul>
+        <li>OGRS3 generation predictor names (acronyms allowed):</li>
+        <ul>
+          <li>Offender Group Reconviction Scale (OGRS)</li>
+          <li>OASys General Reoffending Predictor (OGP)</li>
+          <li>OASys Violent Predictor (OVP)</li>
+          <li>OASys Sexual Predictor – Direct Contact (OSP-DC)</li>
+          <li>OASys Sexual Predictor – Images and Indirect Contact (OSP-IIC)</li>
+          <li>Serious Non-Sexual Violence (SNSV)</li>
+          <li>Risk of Serious Recidivism (RSR)</li>
+        </ul>
+      </ul>
+      <li>level (enum - LOW, MEDIUM, HIGH, VERY_HIGH)</li>
+      <li>score</li>
+      <li>staticOrDynamic (enum - STATIC, DYNAMIC)</li>
+      <li>lastUpdated (string - 19 December 2024)</li>
+      <li>bandPercentages (List[string] - ["0%", "29.99%", "59.99%", "79.99%", "99.99%"])</li>
+    </ul>
+
+    <strong>E.g.</strong>
+    <pre><code>{
+  type: 'All Reoffending Predictor',
+  level: 'VERY_HIGH',
+  score: 78.89,
+  staticOrDynamic: 'DYNAMIC',
+  lastUpdated: '19 December 2024',
+  bandPercentages: ["0%", "29.99%", "59.99%", "79.99%", "99.99%"]
+}
+    </code></pre>
+
+    <h3>Macro flags</h3>
+    <ul>
+      <li>isLowToVeryHigh (boolean)</li>
+      <ul>
+        <li>true - scale in LOW, MEDIUM, HIGH, <strong>VERY_HIGH</strong> format</li>
+        <li>false - scale in LOW, MEDIUM, HIGH format</li>
+      </ul>
+      <li>showScore (boolean)</li>
+      <ul>
+        <li>true - shows predictor score on the marker</li>
+        <li>false - hides predictor score on the marker</li>
+      </ul>
+      <li>includePercentage (boolean)</li>
+      <ul>
+        <li>true - shows the band percentages on the scale</li>
+        <li>false - hides the band percentages on the scale</li>
+      </ul>
+    </ul>
+  </div>
+
+  <strong>E.g.</strong>
+  <pre><code>predictorScale(predictorObject, isLowToVeryHigh, showScore, includePercentage)</code></pre>
+  <br>
+  <h2 class="govuk-heading-m">OGRS4 examples</h2>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      {{ predictorScale(predictorScaleScores.AllPredictor, true, true, true) }}
+    </div>
+  </div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      {{ predictorScale(predictorScaleScores.CombinedPredictor, true, true, true) }}
+    </div>
+  </div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      {{ predictorScale(predictorScaleScores.ViolentPredictor, true, true, true) }}
+    </div>
+  </div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      {{ predictorScale(predictorScaleScores.DirectContact, true, false, false) }}
+    </div>
+  </div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      {{ predictorScale(predictorScaleScores.IndecentImages, false, false, false) }}
+    </div>
+  </div>
+
+  <h2 class="govuk-heading-m">Legacy data examples</h2>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      {{ predictorScale(predictorScaleScores.OGRS3, true, true, true) }}
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      {{ predictorScale(predictorScaleScores.RSR, false, true, true) }}
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      {{ predictorScale(predictorScaleScores.OGP, true, true, true) }}
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      {{ predictorScale(predictorScaleScores.OVP, true, true, true) }}
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      {{ predictorScale(predictorScaleScores.OSPDC, true, false, false) }}
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      {{ predictorScale(predictorScaleScores.OSPIIC, false, false, false) }}
+    </div>
+  </div>
+
+  <h2 class="govuk-heading-m">Not applicable example</h2>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      {{ predictorScale(predictorScaleNotApplicableScores.RSR, false, false, false) }}
+    </div>
+  </div>
+
+{% endblock %}

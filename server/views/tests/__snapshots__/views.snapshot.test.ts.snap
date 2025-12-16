@@ -9,31 +9,31 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the Intro page
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#0b0c0c">
 
-    
+
       <link rel="icon" sizes="48x48" href="/assets/images/favicon.ico">
       <link rel="icon" sizes="any" href="/assets/images/favicon.svg" type="image/svg+xml">
       <link rel="mask-icon" href="/assets/images/govuk-icon-mask.svg" color="#0b0c0c">
       <link rel="apple-touch-icon" href="/assets/images/govuk-icon-180.png">
       <link rel="manifest" href="/assets/manifest.json">
-    
 
-    
+
+
   <link href="/assets/css/index.css" rel="stylesheet"/>
 
-    
+
   </head>
   <body class="govuk-template__body">
     <script>document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');</script>
-    
 
 
-    
+
+
       <a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
 
-    
 
-    
-  
+
+
+
 <header class="hmpps-header" role="banner">
   <div class="hmpps-header__container">
     <div class="hmpps-header__title">
@@ -48,19 +48,19 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the Intro page
 
       <a class="hmpps-header__link hmpps-header__title__service-name" href="/">ARNS Frontend Components</a>
 
-      
+
     </div>
 
     <nav aria-label="Account navigation">
       <ul class="hmpps-header__navigation">
-        
+
           <li class="hmpps-header__navigation__item">
             <a data-qa="manageDetails" class="hmpps-header__link" href="/account-details" data-test="manage-account-link" rel="noopener noreferrer">
               <span data-qa=header-user-name>F. Last</span>
               <span class="hmpps-header__link__sub-text">Manage your details</span>
             </a>
           </li>
-        
+
 
         <li class="hmpps-header__navigation__item">
           <a data-qa="signOut" class="hmpps-header__link" href="/sign-out">Sign out</a>
@@ -72,11 +72,11 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the Intro page
 
 
 
-    
+
       <div class="govuk-width-container">
-        
+
         <main class="govuk-main-wrapper govuk-body" id="main-content">
-          
+
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-one-third">
       <nav class="moj-side-navigation" aria-label="Side navigation" >
@@ -86,44 +86,44 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the Intro page
             <a href="/" aria-current="location">Introduction</a>
           </li>
         </ul>
-    
+
       <h4 class="moj-side-navigation__title">Components</h4>
       <ul class="moj-side-navigation__list">
           <li class="moj-side-navigation__item">
             <a href="/mappa-widget">MAPPA widget</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/risk-flag-widget">Risk flag widget</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/rosh-widget">ROSH widget</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/predictor-badge">Predictor badge</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/expanded-predictor-badge">Expanded predictor badge</a>
           </li>
         </ul>
-    
+
       <h4 class="moj-side-navigation__title">Legacy components</h4>
       <ul class="moj-side-navigation__list">
           <li class="moj-side-navigation__item">
             <a href="/predictor-scores">Predictor scores</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/predictor-scores-indicator">Predictor scores indicator</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline">Predictor timeline</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline-item">Predictor timeline item</a>
           </li>
@@ -132,7 +132,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the Intro page
 
     </div>
     <div class="govuk-grid-column-two-thirds">
-      
+
 
   <h1 class="govuk-heading-xl">
     Introduction
@@ -155,16 +155,16 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the Intro page
 
         </main>
       </div>
-    
 
-    
+
+
       <footer class="govuk-footer">
   <div class="govuk-width-container">
-    
-    
+
+
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
-        
+
         <svg
           aria-hidden="true"
           focusable="false"
@@ -180,14 +180,14 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the Intro page
           />
         </svg>
         <span class="govuk-footer__licence-description">
-        
+
           All content is available under the
           <a
             class="govuk-footer__link"
             href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
             rel="license"
           >Open Government Licence v3.0</a>, except where otherwise stated
-        
+
         </span>
       </div>
       <div class="govuk-footer__meta-item">
@@ -195,18 +195,18 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the Intro page
           class="govuk-footer__link govuk-footer__copyright-logo"
           href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
         >
-        
+
           © Crown copyright
-        
+
         </a>
       </div>
     </div>
   </div>
 </footer>
 
-    
 
-    
+
+
   <script type="module" src="/assets/js/index.js"></script>
   <script type="module" src="/assets/js/predictor-timeline.js"></script>
 
@@ -224,31 +224,31 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#0b0c0c">
 
-    
+
       <link rel="icon" sizes="48x48" href="/assets/images/favicon.ico">
       <link rel="icon" sizes="any" href="/assets/images/favicon.svg" type="image/svg+xml">
       <link rel="mask-icon" href="/assets/images/govuk-icon-mask.svg" color="#0b0c0c">
       <link rel="apple-touch-icon" href="/assets/images/govuk-icon-180.png">
       <link rel="manifest" href="/assets/manifest.json">
-    
 
-    
+
+
   <link href="/assets/css/index.css" rel="stylesheet"/>
 
-    
+
   </head>
   <body class="govuk-template__body">
     <script>document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');</script>
-    
 
 
-    
+
+
       <a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
 
-    
 
-    
-  
+
+
+
 <header class="hmpps-header" role="banner">
   <div class="hmpps-header__container">
     <div class="hmpps-header__title">
@@ -263,19 +263,19 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
       <a class="hmpps-header__link hmpps-header__title__service-name" href="/">ARNS Frontend Components</a>
 
-      
+
     </div>
 
     <nav aria-label="Account navigation">
       <ul class="hmpps-header__navigation">
-        
+
           <li class="hmpps-header__navigation__item">
             <a data-qa="manageDetails" class="hmpps-header__link" href="/account-details" data-test="manage-account-link" rel="noopener noreferrer">
               <span data-qa=header-user-name>F. Last</span>
               <span class="hmpps-header__link__sub-text">Manage your details</span>
             </a>
           </li>
-        
+
 
         <li class="hmpps-header__navigation__item">
           <a data-qa="signOut" class="hmpps-header__link" href="/sign-out">Sign out</a>
@@ -287,11 +287,11 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
 
 
-    
+
       <div class="govuk-width-container">
-        
+
         <main class="govuk-main-wrapper govuk-body" id="main-content">
-          
+
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-one-third">
       <nav class="moj-side-navigation" aria-label="Side navigation" >
@@ -301,44 +301,44 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
             <a href="/">Introduction</a>
           </li>
         </ul>
-    
+
       <h4 class="moj-side-navigation__title">Components</h4>
       <ul class="moj-side-navigation__list">
           <li class="moj-side-navigation__item">
             <a href="/mappa-widget">MAPPA widget</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/risk-flag-widget">Risk flag widget</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/rosh-widget">ROSH widget</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/predictor-badge">Predictor badge</a>
           </li>
-        
+
           <li class="moj-side-navigation__item moj-side-navigation__item--active">
             <a href="/expanded-predictor-badge" aria-current="location">Expanded predictor badge</a>
           </li>
         </ul>
-    
+
       <h4 class="moj-side-navigation__title">Legacy components</h4>
       <ul class="moj-side-navigation__list">
           <li class="moj-side-navigation__item">
             <a href="/predictor-scores">Predictor scores</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/predictor-scores-indicator">Predictor scores indicator</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline">Predictor timeline</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline-item">Predictor timeline item</a>
           </li>
@@ -347,7 +347,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
     </div>
     <div class="govuk-grid-column-two-thirds">
-      
+
   <h1 class="govuk-heading-xl">
     Expanded predictor badge
   </h1>
@@ -415,15 +415,15 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     </div>
     <div class="govuk-grid-column-one-half">
       <div class="govuk-!-margin-bottom-4">
-        
 
-  
-  
-    
-  
 
-  
-  
+
+
+
+
+
+
+
 
   <div class="expanded-predictor-badge--low">
     <span
@@ -432,7 +432,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">LOW</span>
 
-      
+
 
       <span class="predictor-badge__static_or_dynamic">Static</span>
 
@@ -445,15 +445,15 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
       </div>
       <div class="govuk-!-margin-bottom-4">
-        
 
-  
-  
-    
-  
 
-  
-  
+
+
+
+
+
+
+
 
   <div class="expanded-predictor-badge--low">
     <span
@@ -462,9 +462,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">LOW</span>
 
-      
+
         <span class="predictor-badge__score">0.12%</span>
-      
+
 
       <span class="predictor-badge__static_or_dynamic">Static</span>
 
@@ -479,15 +479,15 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     </div>
     <div class="govuk-grid-column-one-half">
       <div class="govuk-!-margin-bottom-4">
-        
 
-  
-  
-    
-  
 
-  
-  
+
+
+
+
+
+
+
 
   <div class="expanded-predictor-badge--low">
     <span
@@ -496,7 +496,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">LOW</span>
 
-      
+
 
       <span class="predictor-badge__static_or_dynamic">Dynamic</span>
 
@@ -509,15 +509,15 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
       </div>
       <div class="govuk-!-margin-bottom-8">
-        
 
-  
-  
-    
-  
 
-  
-  
+
+
+
+
+
+
+
 
   <div class="expanded-predictor-badge--low">
     <span
@@ -526,9 +526,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">LOW</span>
 
-      
+
         <span class="predictor-badge__score">1.23%</span>
-      
+
 
       <span class="predictor-badge__static_or_dynamic">Dynamic</span>
 
@@ -544,15 +544,15 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
     <div class="govuk-grid-column-one-half">
       <div class="govuk-!-margin-bottom-4">
-        
 
-  
-  
-    
-  
 
-  
-  
+
+
+
+
+
+
+
 
   <div class="expanded-predictor-badge--medium">
     <span
@@ -561,7 +561,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">MEDIUM</span>
 
-      
+
 
       <span class="predictor-badge__static_or_dynamic">Static</span>
 
@@ -574,15 +574,15 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
       </div>
       <div class="govuk-!-margin-bottom-4">
-        
 
-  
-  
-    
-  
 
-  
-  
+
+
+
+
+
+
+
 
   <div class="expanded-predictor-badge--medium">
     <span
@@ -591,9 +591,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">MEDIUM</span>
 
-      
+
         <span class="predictor-badge__score">23.45%</span>
-      
+
 
       <span class="predictor-badge__static_or_dynamic">Static</span>
 
@@ -608,15 +608,15 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     </div>
     <div class="govuk-grid-column-one-half">
       <div class="govuk-!-margin-bottom-4">
-        
 
-  
-  
-    
-  
 
-  
-  
+
+
+
+
+
+
+
 
   <div class="expanded-predictor-badge--medium">
     <span
@@ -625,7 +625,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">MEDIUM</span>
 
-      
+
 
       <span class="predictor-badge__static_or_dynamic">Dynamic</span>
 
@@ -638,15 +638,15 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
       </div>
       <div class="govuk-!-margin-bottom-8">
-        
 
-  
-  
-    
-  
 
-  
-  
+
+
+
+
+
+
+
 
   <div class="expanded-predictor-badge--medium">
     <span
@@ -655,9 +655,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">MEDIUM</span>
 
-      
+
         <span class="predictor-badge__score">34.56%</span>
-      
+
 
       <span class="predictor-badge__static_or_dynamic">Dynamic</span>
 
@@ -673,15 +673,15 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
     <div class="govuk-grid-column-one-half">
       <div class="govuk-!-margin-bottom-4">
-        
 
-  
-  
-    
-  
 
-  
-  
+
+
+
+
+
+
+
 
   <div class="expanded-predictor-badge--high">
     <span
@@ -690,7 +690,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">HIGH</span>
 
-      
+
 
       <span class="predictor-badge__static_or_dynamic">Static</span>
 
@@ -703,15 +703,15 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
       </div>
       <div class="govuk-!-margin-bottom-4">
-        
 
-  
-  
-    
-  
 
-  
-  
+
+
+
+
+
+
+
 
   <div class="expanded-predictor-badge--high">
     <span
@@ -720,9 +720,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">HIGH</span>
 
-      
+
         <span class="predictor-badge__score">45.67%</span>
-      
+
 
       <span class="predictor-badge__static_or_dynamic">Static</span>
 
@@ -737,15 +737,15 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     </div>
     <div class="govuk-grid-column-one-half">
       <div class="govuk-!-margin-bottom-4">
-        
 
-  
-  
-    
-  
 
-  
-  
+
+
+
+
+
+
+
 
   <div class="expanded-predictor-badge--high">
     <span
@@ -754,7 +754,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">HIGH</span>
 
-      
+
 
       <span class="predictor-badge__static_or_dynamic">Dynamic</span>
 
@@ -767,15 +767,15 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
       </div>
       <div class="govuk-!-margin-bottom-8">
-        
 
-  
-  
-    
-  
 
-  
-  
+
+
+
+
+
+
+
 
   <div class="expanded-predictor-badge--high">
     <span
@@ -784,9 +784,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">HIGH</span>
 
-      
+
         <span class="predictor-badge__score">56.67%</span>
-      
+
 
       <span class="predictor-badge__static_or_dynamic">Dynamic</span>
 
@@ -802,15 +802,15 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
     <div class="govuk-grid-column-one-half">
       <div class="govuk-!-margin-bottom-4">
-        
 
-  
-  
-    
-  
 
-  
-  
+
+
+
+
+
+
+
 
   <div class="expanded-predictor-badge--very-high">
     <span
@@ -819,7 +819,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">VERY HIGH</span>
 
-      
+
 
       <span class="predictor-badge__static_or_dynamic">Static</span>
 
@@ -832,15 +832,15 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
       </div>
       <div class="govuk-!-margin-bottom-4">
-        
 
-  
-  
-    
-  
 
-  
-  
+
+
+
+
+
+
+
 
   <div class="expanded-predictor-badge--very-high">
     <span
@@ -849,9 +849,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">VERY HIGH</span>
 
-      
+
         <span class="predictor-badge__score">67.78%</span>
-      
+
 
       <span class="predictor-badge__static_or_dynamic">Static</span>
 
@@ -866,15 +866,15 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     </div>
     <div class="govuk-grid-column-one-half">
       <div class="govuk-!-margin-bottom-4">
-        
 
-  
-  
-    
-  
 
-  
-  
+
+
+
+
+
+
+
 
   <div class="expanded-predictor-badge--very-high">
     <span
@@ -883,7 +883,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">VERY HIGH</span>
 
-      
+
 
       <span class="predictor-badge__static_or_dynamic">Dynamic</span>
 
@@ -896,17 +896,17 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
       </div>
       <div class="govuk-!-margin-bottom-8">
-        
 
-  
-  
-    
-  
 
-  
-  
-    
-  
+
+
+
+
+
+
+
+
+
 
   <div class="expanded-predictor-badge--very-high">
     <span
@@ -915,9 +915,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">VERY HIGH</span>
 
-      
+
         <span class="predictor-badge__score">78.89%</span>
-      
+
 
       <span class="predictor-badge__static_or_dynamic predictor-badge__wrapped_static_or_dynamic">Dynamic</span>
 
@@ -938,16 +938,16 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
         </main>
       </div>
-    
 
-    
+
+
       <footer class="govuk-footer">
   <div class="govuk-width-container">
-    
-    
+
+
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
-        
+
         <svg
           aria-hidden="true"
           focusable="false"
@@ -963,14 +963,14 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
           />
         </svg>
         <span class="govuk-footer__licence-description">
-        
+
           All content is available under the
           <a
             class="govuk-footer__link"
             href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
             rel="license"
           >Open Government Licence v3.0</a>, except where otherwise stated
-        
+
         </span>
       </div>
       <div class="govuk-footer__meta-item">
@@ -978,18 +978,18 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
           class="govuk-footer__link govuk-footer__copyright-logo"
           href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
         >
-        
+
           © Crown copyright
-        
+
         </a>
       </div>
     </div>
   </div>
 </footer>
 
-    
 
-    
+
+
   <script type="module" src="/assets/js/index.js"></script>
   <script type="module" src="/assets/js/predictor-timeline.js"></script>
 
@@ -1007,31 +1007,31 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the mappa widg
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#0b0c0c">
 
-    
+
       <link rel="icon" sizes="48x48" href="/assets/images/favicon.ico">
       <link rel="icon" sizes="any" href="/assets/images/favicon.svg" type="image/svg+xml">
       <link rel="mask-icon" href="/assets/images/govuk-icon-mask.svg" color="#0b0c0c">
       <link rel="apple-touch-icon" href="/assets/images/govuk-icon-180.png">
       <link rel="manifest" href="/assets/manifest.json">
-    
 
-    
+
+
   <link href="/assets/css/index.css" rel="stylesheet"/>
 
-    
+
   </head>
   <body class="govuk-template__body">
     <script>document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');</script>
-    
 
 
-    
+
+
       <a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
 
-    
 
-    
-  
+
+
+
 <header class="hmpps-header" role="banner">
   <div class="hmpps-header__container">
     <div class="hmpps-header__title">
@@ -1046,19 +1046,19 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the mappa widg
 
       <a class="hmpps-header__link hmpps-header__title__service-name" href="/">ARNS Frontend Components</a>
 
-      
+
     </div>
 
     <nav aria-label="Account navigation">
       <ul class="hmpps-header__navigation">
-        
+
           <li class="hmpps-header__navigation__item">
             <a data-qa="manageDetails" class="hmpps-header__link" href="/account-details" data-test="manage-account-link" rel="noopener noreferrer">
               <span data-qa=header-user-name>F. Last</span>
               <span class="hmpps-header__link__sub-text">Manage your details</span>
             </a>
           </li>
-        
+
 
         <li class="hmpps-header__navigation__item">
           <a data-qa="signOut" class="hmpps-header__link" href="/sign-out">Sign out</a>
@@ -1070,11 +1070,11 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the mappa widg
 
 
 
-    
+
       <div class="govuk-width-container">
-        
+
         <main class="govuk-main-wrapper govuk-body" id="main-content">
-          
+
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-one-third">
       <nav class="moj-side-navigation" aria-label="Side navigation" >
@@ -1084,44 +1084,44 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the mappa widg
             <a href="/">Introduction</a>
           </li>
         </ul>
-    
+
       <h4 class="moj-side-navigation__title">Components</h4>
       <ul class="moj-side-navigation__list">
           <li class="moj-side-navigation__item moj-side-navigation__item--active">
             <a href="/mappa-widget" aria-current="location">MAPPA widget</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/risk-flag-widget">Risk flag widget</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/rosh-widget">ROSH widget</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/predictor-badge">Predictor badge</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/expanded-predictor-badge">Expanded predictor badge</a>
           </li>
         </ul>
-    
+
       <h4 class="moj-side-navigation__title">Legacy components</h4>
       <ul class="moj-side-navigation__list">
           <li class="moj-side-navigation__item">
             <a href="/predictor-scores">Predictor scores</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/predictor-scores-indicator">Predictor scores indicator</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline">Predictor timeline</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline-item">Predictor timeline item</a>
           </li>
@@ -1130,7 +1130,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the mappa widg
 
     </div>
     <div class="govuk-grid-column-two-thirds">
-      
+
   <h1 class="govuk-heading-xl">
     Mappa widget
   </h1>
@@ -1140,10 +1140,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the mappa widg
 
     <h3 class="govuk-heading-m"><strong>CAT 2/LEVEL 1</strong> MAPPA</h3>
     <p class="govuk-body-m">Multi-agency public protection arrangements</p>
-    
+
         <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
         <p class="govuk-hint govuk-body-m">Last updated: 10 October 2021</p>
-    
+
 
 </aside>
 
@@ -1153,7 +1153,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the mappa widg
 
     <h3 class="govuk-heading-m"><strong>NO</strong> MAPPA</h3>
     <p class="govuk-body-m">Multi-agency public protection arrangements</p>
-    
+
 
 </aside>
 
@@ -1176,16 +1176,16 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the mappa widg
 
         </main>
       </div>
-    
 
-    
+
+
       <footer class="govuk-footer">
   <div class="govuk-width-container">
-    
-    
+
+
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
-        
+
         <svg
           aria-hidden="true"
           focusable="false"
@@ -1201,14 +1201,14 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the mappa widg
           />
         </svg>
         <span class="govuk-footer__licence-description">
-        
+
           All content is available under the
           <a
             class="govuk-footer__link"
             href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
             rel="license"
           >Open Government Licence v3.0</a>, except where otherwise stated
-        
+
         </span>
       </div>
       <div class="govuk-footer__meta-item">
@@ -1216,18 +1216,18 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the mappa widg
           class="govuk-footer__link govuk-footer__copyright-logo"
           href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
         >
-        
+
           © Crown copyright
-        
+
         </a>
       </div>
     </div>
   </div>
 </footer>
 
-    
 
-    
+
+
   <script type="module" src="/assets/js/index.js"></script>
   <script type="module" src="/assets/js/predictor-timeline.js"></script>
 
@@ -1245,31 +1245,31 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#0b0c0c">
 
-    
+
       <link rel="icon" sizes="48x48" href="/assets/images/favicon.ico">
       <link rel="icon" sizes="any" href="/assets/images/favicon.svg" type="image/svg+xml">
       <link rel="mask-icon" href="/assets/images/govuk-icon-mask.svg" color="#0b0c0c">
       <link rel="apple-touch-icon" href="/assets/images/govuk-icon-180.png">
       <link rel="manifest" href="/assets/manifest.json">
-    
 
-    
+
+
   <link href="/assets/css/index.css" rel="stylesheet"/>
 
-    
+
   </head>
   <body class="govuk-template__body">
     <script>document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');</script>
-    
 
 
-    
+
+
       <a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
 
-    
 
-    
-  
+
+
+
 <header class="hmpps-header" role="banner">
   <div class="hmpps-header__container">
     <div class="hmpps-header__title">
@@ -1284,19 +1284,19 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
       <a class="hmpps-header__link hmpps-header__title__service-name" href="/">ARNS Frontend Components</a>
 
-      
+
     </div>
 
     <nav aria-label="Account navigation">
       <ul class="hmpps-header__navigation">
-        
+
           <li class="hmpps-header__navigation__item">
             <a data-qa="manageDetails" class="hmpps-header__link" href="/account-details" data-test="manage-account-link" rel="noopener noreferrer">
               <span data-qa=header-user-name>F. Last</span>
               <span class="hmpps-header__link__sub-text">Manage your details</span>
             </a>
           </li>
-        
+
 
         <li class="hmpps-header__navigation__item">
           <a data-qa="signOut" class="hmpps-header__link" href="/sign-out">Sign out</a>
@@ -1308,11 +1308,11 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
-    
+
       <div class="govuk-width-container">
-        
+
         <main class="govuk-main-wrapper govuk-body" id="main-content">
-          
+
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-one-third">
       <nav class="moj-side-navigation" aria-label="Side navigation" >
@@ -1322,44 +1322,44 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             <a href="/">Introduction</a>
           </li>
         </ul>
-    
+
       <h4 class="moj-side-navigation__title">Components</h4>
       <ul class="moj-side-navigation__list">
           <li class="moj-side-navigation__item">
             <a href="/mappa-widget">MAPPA widget</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/risk-flag-widget">Risk flag widget</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/rosh-widget">ROSH widget</a>
           </li>
-        
+
           <li class="moj-side-navigation__item moj-side-navigation__item--active">
             <a href="/predictor-badge" aria-current="location">Predictor badge</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/expanded-predictor-badge">Expanded predictor badge</a>
           </li>
         </ul>
-    
+
       <h4 class="moj-side-navigation__title">Legacy components</h4>
       <ul class="moj-side-navigation__list">
           <li class="moj-side-navigation__item">
             <a href="/predictor-scores">Predictor scores</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/predictor-scores-indicator">Predictor scores indicator</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline">Predictor timeline</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline-item">Predictor timeline item</a>
           </li>
@@ -1368,7 +1368,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
     </div>
     <div class="govuk-grid-column-two-thirds">
-      
+
   <h1 class="govuk-heading-xl">
     Predictor badge
   </h1>
@@ -1432,18 +1432,18 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         </p>
         <h2>Examples</h2>
         <div class="govuk-!-margin-bottom-4">
-          
 
-  
-  
-    
-  
+
+
+
+
+
 
   <div class="predictor-badge--low">
     <span
       class="predictor-badge__type_and_level">ALL REOFFENDING PREDICTOR <strong>LOW</strong></span>
 
-    
+
 
     <span class="predictor-badge__static_or_dynamic">Static</span>
 
@@ -1452,18 +1452,18 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
         </div>
         <div class="govuk-!-margin-bottom-4">
-          
 
-  
-  
-    
-  
+
+
+
+
+
 
   <div class="predictor-badge--low">
     <span
       class="predictor-badge__type_and_level">ALL REOFFENDING PREDICTOR <strong>LOW</strong></span>
 
-    
+
 
     <span class="predictor-badge__static_or_dynamic">Dynamic</span>
 
@@ -1472,20 +1472,20 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
         </div>
         <div class="govuk-!-margin-bottom-4">
-          
 
-  
-  
-    
-  
+
+
+
+
+
 
   <div class="predictor-badge--low">
     <span
       class="predictor-badge__type_and_level">ALL REOFFENDING PREDICTOR <strong>LOW</strong></span>
 
-    
+
       <span class="predictor-badge__score">0.12%</span>
-    
+
 
     <span class="predictor-badge__static_or_dynamic">Static</span>
 
@@ -1494,20 +1494,20 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
         </div>
         <div class="govuk-!-margin-bottom-8">
-          
 
-  
-  
-    
-  
+
+
+
+
+
 
   <div class="predictor-badge--low">
     <span
       class="predictor-badge__type_and_level">ALL REOFFENDING PREDICTOR <strong>LOW</strong></span>
 
-    
+
       <span class="predictor-badge__score">1.23%</span>
-    
+
 
     <span class="predictor-badge__static_or_dynamic">Dynamic</span>
 
@@ -1517,18 +1517,18 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         </div>
 
         <div class="govuk-!-margin-bottom-4">
-          
 
-  
-  
-    
-  
+
+
+
+
+
 
   <div class="predictor-badge--medium">
     <span
       class="predictor-badge__type_and_level">VIOLENT REOFFENDING PREDICTOR <strong>MEDIUM</strong></span>
 
-    
+
 
     <span class="predictor-badge__static_or_dynamic">Static</span>
 
@@ -1537,18 +1537,18 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
         </div>
         <div class="govuk-!-margin-bottom-4">
-          
 
-  
-  
-    
-  
+
+
+
+
+
 
   <div class="predictor-badge--medium">
     <span
       class="predictor-badge__type_and_level">VIOLENT REOFFENDING PREDICTOR <strong>MEDIUM</strong></span>
 
-    
+
 
     <span class="predictor-badge__static_or_dynamic">Dynamic</span>
 
@@ -1557,20 +1557,20 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
         </div>
         <div class="govuk-!-margin-bottom-4">
-          
 
-  
-  
-    
-  
+
+
+
+
+
 
   <div class="predictor-badge--medium">
     <span
       class="predictor-badge__type_and_level">VIOLENT REOFFENDING PREDICTOR <strong>MEDIUM</strong></span>
 
-    
+
       <span class="predictor-badge__score">23.45%</span>
-    
+
 
     <span class="predictor-badge__static_or_dynamic">Static</span>
 
@@ -1579,20 +1579,20 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
         </div>
         <div class="govuk-!-margin-bottom-8">
-          
 
-  
-  
-    
-  
+
+
+
+
+
 
   <div class="predictor-badge--medium">
     <span
       class="predictor-badge__type_and_level">VIOLENT REOFFENDING PREDICTOR <strong>MEDIUM</strong></span>
 
-    
+
       <span class="predictor-badge__score">34.56%</span>
-    
+
 
     <span class="predictor-badge__static_or_dynamic">Dynamic</span>
 
@@ -1602,18 +1602,18 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         </div>
 
         <div class="govuk-!-margin-bottom-4">
-          
 
-  
-  
-    
-  
+
+
+
+
+
 
   <div class="predictor-badge--high">
     <span
       class="predictor-badge__type_and_level">SERIOUS VIOLENT REOFFENDING PREDICTOR <strong>HIGH</strong></span>
 
-    
+
 
     <span class="predictor-badge__static_or_dynamic">Static</span>
 
@@ -1622,18 +1622,18 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
         </div>
         <div class="govuk-!-margin-bottom-4">
-          
 
-  
-  
-    
-  
+
+
+
+
+
 
   <div class="predictor-badge--high">
     <span
       class="predictor-badge__type_and_level">SERIOUS VIOLENT REOFFENDING PREDICTOR <strong>HIGH</strong></span>
 
-    
+
 
     <span class="predictor-badge__static_or_dynamic">Dynamic</span>
 
@@ -1642,20 +1642,20 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
         </div>
         <div class="govuk-!-margin-bottom-4">
-          
 
-  
-  
-    
-  
+
+
+
+
+
 
   <div class="predictor-badge--high">
     <span
       class="predictor-badge__type_and_level">SERIOUS VIOLENT REOFFENDING PREDICTOR <strong>HIGH</strong></span>
 
-    
+
       <span class="predictor-badge__score">45.67%</span>
-    
+
 
     <span class="predictor-badge__static_or_dynamic">Static</span>
 
@@ -1664,20 +1664,20 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
         </div>
         <div class="govuk-!-margin-bottom-8">
-          
 
-  
-  
-    
-  
+
+
+
+
+
 
   <div class="predictor-badge--high">
     <span
       class="predictor-badge__type_and_level">SERIOUS VIOLENT REOFFENDING PREDICTOR <strong>HIGH</strong></span>
 
-    
+
       <span class="predictor-badge__score">56.67%</span>
-    
+
 
     <span class="predictor-badge__static_or_dynamic">Dynamic</span>
 
@@ -1687,18 +1687,18 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         </div>
 
         <div class="govuk-!-margin-bottom-4">
-          
 
-  
-  
-    
-  
+
+
+
+
+
 
   <div class="predictor-badge--very-high">
     <span
       class="predictor-badge__type_and_level">COMBINED SERIOUS REOFFENDING PREDICTOR <strong>VERY HIGH</strong></span>
 
-    
+
 
     <span class="predictor-badge__static_or_dynamic">Static</span>
 
@@ -1707,18 +1707,18 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
         </div>
         <div class="govuk-!-margin-bottom-4">
-          
 
-  
-  
-    
-  
+
+
+
+
+
 
   <div class="predictor-badge--very-high">
     <span
       class="predictor-badge__type_and_level">COMBINED SERIOUS REOFFENDING PREDICTOR <strong>VERY HIGH</strong></span>
 
-    
+
 
     <span class="predictor-badge__static_or_dynamic">Dynamic</span>
 
@@ -1727,20 +1727,20 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
         </div>
         <div class="govuk-!-margin-bottom-4">
-          
 
-  
-  
-    
-  
+
+
+
+
+
 
   <div class="predictor-badge--very-high">
     <span
       class="predictor-badge__type_and_level">COMBINED SERIOUS REOFFENDING PREDICTOR <strong>VERY HIGH</strong></span>
 
-    
+
       <span class="predictor-badge__score">67.78%</span>
-    
+
 
     <span class="predictor-badge__static_or_dynamic">Static</span>
 
@@ -1749,20 +1749,20 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
         </div>
         <div class="govuk-!-margin-bottom-8">
-          
 
-  
-  
-    
-  
+
+
+
+
+
 
   <div class="predictor-badge--very-high">
     <span
       class="predictor-badge__type_and_level">COMBINED SERIOUS REOFFENDING PREDICTOR <strong>VERY HIGH</strong></span>
 
-    
+
       <span class="predictor-badge__score">78.89%</span>
-    
+
 
     <span class="predictor-badge__static_or_dynamic">Dynamic</span>
 
@@ -1779,16 +1779,16 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
         </main>
       </div>
-    
 
-    
+
+
       <footer class="govuk-footer">
   <div class="govuk-width-container">
-    
-    
+
+
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
-        
+
         <svg
           aria-hidden="true"
           focusable="false"
@@ -1804,14 +1804,14 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           />
         </svg>
         <span class="govuk-footer__licence-description">
-        
+
           All content is available under the
           <a
             class="govuk-footer__link"
             href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
             rel="license"
           >Open Government Licence v3.0</a>, except where otherwise stated
-        
+
         </span>
       </div>
       <div class="govuk-footer__meta-item">
@@ -1819,18 +1819,18 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           class="govuk-footer__link govuk-footer__copyright-logo"
           href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
         >
-        
+
           © Crown copyright
-        
+
         </a>
       </div>
     </div>
   </div>
 </footer>
 
-    
 
-    
+
+
   <script type="module" src="/assets/js/index.js"></script>
   <script type="module" src="/assets/js/predictor-timeline.js"></script>
 
@@ -1848,31 +1848,31 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#0b0c0c">
 
-    
+
       <link rel="icon" sizes="48x48" href="/assets/images/favicon.ico">
       <link rel="icon" sizes="any" href="/assets/images/favicon.svg" type="image/svg+xml">
       <link rel="mask-icon" href="/assets/images/govuk-icon-mask.svg" color="#0b0c0c">
       <link rel="apple-touch-icon" href="/assets/images/govuk-icon-180.png">
       <link rel="manifest" href="/assets/manifest.json">
-    
 
-    
+
+
   <link href="/assets/css/index.css" rel="stylesheet"/>
 
-    
+
   </head>
   <body class="govuk-template__body">
     <script>document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');</script>
-    
 
 
-    
+
+
       <a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
 
-    
 
-    
-  
+
+
+
 <header class="hmpps-header" role="banner">
   <div class="hmpps-header__container">
     <div class="hmpps-header__title">
@@ -1887,19 +1887,19 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
       <a class="hmpps-header__link hmpps-header__title__service-name" href="/">ARNS Frontend Components</a>
 
-      
+
     </div>
 
     <nav aria-label="Account navigation">
       <ul class="hmpps-header__navigation">
-        
+
           <li class="hmpps-header__navigation__item">
             <a data-qa="manageDetails" class="hmpps-header__link" href="/account-details" data-test="manage-account-link" rel="noopener noreferrer">
               <span data-qa=header-user-name>F. Last</span>
               <span class="hmpps-header__link__sub-text">Manage your details</span>
             </a>
           </li>
-        
+
 
         <li class="hmpps-header__navigation__item">
           <a data-qa="signOut" class="hmpps-header__link" href="/sign-out">Sign out</a>
@@ -1911,11 +1911,11 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
-    
+
       <div class="govuk-width-container">
-        
+
         <main class="govuk-main-wrapper govuk-body" id="main-content">
-          
+
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-one-third">
       <nav class="moj-side-navigation" aria-label="Side navigation" >
@@ -1925,44 +1925,44 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             <a href="/">Introduction</a>
           </li>
         </ul>
-    
+
       <h4 class="moj-side-navigation__title">Components</h4>
       <ul class="moj-side-navigation__list">
           <li class="moj-side-navigation__item">
             <a href="/mappa-widget">MAPPA widget</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/risk-flag-widget">Risk flag widget</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/rosh-widget">ROSH widget</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/predictor-badge">Predictor badge</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/expanded-predictor-badge">Expanded predictor badge</a>
           </li>
         </ul>
-    
+
       <h4 class="moj-side-navigation__title">Legacy components</h4>
       <ul class="moj-side-navigation__list">
           <li class="moj-side-navigation__item">
             <a href="/predictor-scores">Predictor scores</a>
           </li>
-        
+
           <li class="moj-side-navigation__item moj-side-navigation__item--active">
             <a href="/predictor-scores-indicator" aria-current="location">Predictor scores indicator</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline">Predictor timeline</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline-item">Predictor timeline item</a>
           </li>
@@ -1971,12 +1971,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
     </div>
     <div class="govuk-grid-column-two-thirds">
-      
+
   <h1 class="govuk-heading-xl">
     Predictor scores indicator
   </h1>
   <div class="govuk-grid-column-full">
-    
+
 
 <div
   role="region"
@@ -2002,9 +2002,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         <h3>HIGH</h3>
         <p>RSR</p>
     </div>
-    
+
     <div class="score-label__card-pointer score-label__card-pointer--white"></div>
-    
+
 </div>
     </div>
     <div id="predictor-scores-indicator" class="govuk-grid-column-one-third">
@@ -2013,9 +2013,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         <h3>MEDIUM</h3>
         <p>OSP/DC</p>
     </div>
-    
+
     <div class="score-label__card-pointer score-label__card-pointer--white"></div>
-    
+
 </div>
     </div>
     <div id="predictor-scores-indicator" class="govuk-grid-column-one-third">
@@ -2024,9 +2024,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         <h3>LOW</h3>
         <p>OSP/IIC</p>
     </div>
-    
+
     <div class="score-label__card-pointer score-label__card-pointer--white"></div>
-    
+
 </div>
     </div>
   </div>
@@ -2036,16 +2036,16 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
         </main>
       </div>
-    
 
-    
+
+
       <footer class="govuk-footer">
   <div class="govuk-width-container">
-    
-    
+
+
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
-        
+
         <svg
           aria-hidden="true"
           focusable="false"
@@ -2061,14 +2061,14 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           />
         </svg>
         <span class="govuk-footer__licence-description">
-        
+
           All content is available under the
           <a
             class="govuk-footer__link"
             href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
             rel="license"
           >Open Government Licence v3.0</a>, except where otherwise stated
-        
+
         </span>
       </div>
       <div class="govuk-footer__meta-item">
@@ -2076,18 +2076,18 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           class="govuk-footer__link govuk-footer__copyright-logo"
           href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
         >
-        
+
           © Crown copyright
-        
+
         </a>
       </div>
     </div>
   </div>
 </footer>
 
-    
 
-    
+
+
   <script type="module" src="/assets/js/index.js"></script>
   <script type="module" src="/assets/js/predictor-timeline.js"></script>
 
@@ -2105,31 +2105,31 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#0b0c0c">
 
-    
+
       <link rel="icon" sizes="48x48" href="/assets/images/favicon.ico">
       <link rel="icon" sizes="any" href="/assets/images/favicon.svg" type="image/svg+xml">
       <link rel="mask-icon" href="/assets/images/govuk-icon-mask.svg" color="#0b0c0c">
       <link rel="apple-touch-icon" href="/assets/images/govuk-icon-180.png">
       <link rel="manifest" href="/assets/manifest.json">
-    
 
-    
+
+
   <link href="/assets/css/index.css" rel="stylesheet"/>
 
-    
+
   </head>
   <body class="govuk-template__body">
     <script>document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');</script>
-    
 
 
-    
+
+
       <a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
 
-    
 
-    
-  
+
+
+
 <header class="hmpps-header" role="banner">
   <div class="hmpps-header__container">
     <div class="hmpps-header__title">
@@ -2144,19 +2144,19 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
       <a class="hmpps-header__link hmpps-header__title__service-name" href="/">ARNS Frontend Components</a>
 
-      
+
     </div>
 
     <nav aria-label="Account navigation">
       <ul class="hmpps-header__navigation">
-        
+
           <li class="hmpps-header__navigation__item">
             <a data-qa="manageDetails" class="hmpps-header__link" href="/account-details" data-test="manage-account-link" rel="noopener noreferrer">
               <span data-qa=header-user-name>F. Last</span>
               <span class="hmpps-header__link__sub-text">Manage your details</span>
             </a>
           </li>
-        
+
 
         <li class="hmpps-header__navigation__item">
           <a data-qa="signOut" class="hmpps-header__link" href="/sign-out">Sign out</a>
@@ -2168,11 +2168,11 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
-    
+
       <div class="govuk-width-container">
-        
+
         <main class="govuk-main-wrapper govuk-body" id="main-content">
-          
+
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-one-third">
       <nav class="moj-side-navigation" aria-label="Side navigation" >
@@ -2182,44 +2182,44 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             <a href="/">Introduction</a>
           </li>
         </ul>
-    
+
       <h4 class="moj-side-navigation__title">Components</h4>
       <ul class="moj-side-navigation__list">
           <li class="moj-side-navigation__item">
             <a href="/mappa-widget">MAPPA widget</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/risk-flag-widget">Risk flag widget</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/rosh-widget">ROSH widget</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/predictor-badge">Predictor badge</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/expanded-predictor-badge">Expanded predictor badge</a>
           </li>
         </ul>
-    
+
       <h4 class="moj-side-navigation__title">Legacy components</h4>
       <ul class="moj-side-navigation__list">
           <li class="moj-side-navigation__item moj-side-navigation__item--active">
             <a href="/predictor-scores" aria-current="location">Predictor scores</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/predictor-scores-indicator">Predictor scores indicator</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline">Predictor timeline</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline-item">Predictor timeline item</a>
           </li>
@@ -2228,13 +2228,13 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
     </div>
     <div class="govuk-grid-column-two-thirds">
-      
+
   <h1 class="govuk-heading-xl">
     Predictor scores
   </h1>
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
-      
+
 
 <div
   role="region"
@@ -2255,22 +2255,22 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     </div>
     <div class="govuk-grid-column-full">
       <h2 class="govuk-heading-l score-header">RSR score</h2>
-      
-
-
-
-
-    
-            
-    
 
 
 
 
 
-        
-        
-    
+
+
+
+
+
+
+
+
+
+
+
 
     <div class="predictor-score govuk-body">
         <div class="score-label">
@@ -2280,12 +2280,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         <h3>HIGH</h3>
         <p>RSR</p>
     </div>
-    
+
     <div class="score-label__card-bottom">
         <p>11.34</p>
     </div>
     <div class="score-label__card-pointer"></div>
-    
+
 </div>
             </div>
         </div>
@@ -2299,7 +2299,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             <div>
                 <span></span>
             </div>
-            
+
         </div>
     </div>
 
@@ -2309,21 +2309,21 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-one-half">
       <h2 class="govuk-heading-l score-header">OSP/DC score</h2>
-      
-
-
-
-
-    
-            
-        
 
 
 
 
 
-        
-        
+
+
+
+
+
+
+
+
+
+
 
 
     <div class="predictor-score govuk-body">
@@ -2334,9 +2334,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         <h3>MEDIUM</h3>
         <p>OSP/DC</p>
     </div>
-    
+
     <div class="score-label__card-pointer score-label__card-pointer--white"></div>
-    
+
 </div>
             </div>
         </div>
@@ -2350,11 +2350,11 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             <div>
                 <span></span>
             </div>
-            
+
                 <div>
                     <span></span>
                 </div>
-            
+
         </div>
     </div>
 
@@ -2362,22 +2362,22 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     </div>
     <div class="govuk-grid-column-one-half">
       <h2 class="govuk-heading-l score-header">OSP/IIC score</h2>
-      
-
-
-
-
-    
-            
-        
 
 
 
 
 
-        
-        
-    
+
+
+
+
+
+
+
+
+
+
+
 
     <div class="predictor-score govuk-body">
         <div class="score-label">
@@ -2387,9 +2387,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         <h3>LOW</h3>
         <p>OSP/IIC</p>
     </div>
-    
+
     <div class="score-label__card-pointer score-label__card-pointer--white"></div>
-    
+
 </div>
             </div>
         </div>
@@ -2403,7 +2403,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             <div>
                 <span></span>
             </div>
-            
+
         </div>
     </div>
 
@@ -2416,16 +2416,16 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
         </main>
       </div>
-    
 
-    
+
+
       <footer class="govuk-footer">
   <div class="govuk-width-container">
-    
-    
+
+
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
-        
+
         <svg
           aria-hidden="true"
           focusable="false"
@@ -2441,14 +2441,14 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           />
         </svg>
         <span class="govuk-footer__licence-description">
-        
+
           All content is available under the
           <a
             class="govuk-footer__link"
             href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
             rel="license"
           >Open Government Licence v3.0</a>, except where otherwise stated
-        
+
         </span>
       </div>
       <div class="govuk-footer__meta-item">
@@ -2456,18 +2456,18 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           class="govuk-footer__link govuk-footer__copyright-logo"
           href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
         >
-        
+
           © Crown copyright
-        
+
         </a>
       </div>
     </div>
   </div>
 </footer>
 
-    
 
-    
+
+
   <script type="module" src="/assets/js/index.js"></script>
   <script type="module" src="/assets/js/predictor-timeline.js"></script>
 
@@ -2485,31 +2485,31 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#0b0c0c">
 
-    
+
       <link rel="icon" sizes="48x48" href="/assets/images/favicon.ico">
       <link rel="icon" sizes="any" href="/assets/images/favicon.svg" type="image/svg+xml">
       <link rel="mask-icon" href="/assets/images/govuk-icon-mask.svg" color="#0b0c0c">
       <link rel="apple-touch-icon" href="/assets/images/govuk-icon-180.png">
       <link rel="manifest" href="/assets/manifest.json">
-    
 
-    
+
+
   <link href="/assets/css/index.css" rel="stylesheet"/>
 
-    
+
   </head>
   <body class="govuk-template__body">
     <script>document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');</script>
-    
 
 
-    
+
+
       <a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
 
-    
 
-    
-  
+
+
+
 <header class="hmpps-header" role="banner">
   <div class="hmpps-header__container">
     <div class="hmpps-header__title">
@@ -2524,19 +2524,19 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
       <a class="hmpps-header__link hmpps-header__title__service-name" href="/">ARNS Frontend Components</a>
 
-      
+
     </div>
 
     <nav aria-label="Account navigation">
       <ul class="hmpps-header__navigation">
-        
+
           <li class="hmpps-header__navigation__item">
             <a data-qa="manageDetails" class="hmpps-header__link" href="/account-details" data-test="manage-account-link" rel="noopener noreferrer">
               <span data-qa=header-user-name>F. Last</span>
               <span class="hmpps-header__link__sub-text">Manage your details</span>
             </a>
           </li>
-        
+
 
         <li class="hmpps-header__navigation__item">
           <a data-qa="signOut" class="hmpps-header__link" href="/sign-out">Sign out</a>
@@ -2548,11 +2548,11 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
-    
+
       <div class="govuk-width-container">
-        
+
         <main class="govuk-main-wrapper govuk-body" id="main-content">
-          
+
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-one-third">
       <nav class="moj-side-navigation" aria-label="Side navigation" >
@@ -2562,44 +2562,44 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             <a href="/">Introduction</a>
           </li>
         </ul>
-    
+
       <h4 class="moj-side-navigation__title">Components</h4>
       <ul class="moj-side-navigation__list">
           <li class="moj-side-navigation__item">
             <a href="/mappa-widget">MAPPA widget</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/risk-flag-widget">Risk flag widget</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/rosh-widget">ROSH widget</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/predictor-badge">Predictor badge</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/expanded-predictor-badge">Expanded predictor badge</a>
           </li>
         </ul>
-    
+
       <h4 class="moj-side-navigation__title">Legacy components</h4>
       <ul class="moj-side-navigation__list">
           <li class="moj-side-navigation__item">
             <a href="/predictor-scores">Predictor scores</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/predictor-scores-indicator">Predictor scores indicator</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline">Predictor timeline</a>
           </li>
-        
+
           <li class="moj-side-navigation__item moj-side-navigation__item--active">
             <a href="/predictor-timeline-item" aria-current="location">Predictor timeline item</a>
           </li>
@@ -2608,12 +2608,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
     </div>
     <div class="govuk-grid-column-two-thirds">
-      
+
   <h1 class="govuk-heading-xl">
     Predictor timeline item
   </h1>
   <div class="govuk-grid-column-full">
-    
+
 
 <div
   role="region"
@@ -2633,53 +2633,53 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
   </div>
   <div class="govuk-grid-column-full">
-    
 
 
 
 
-        
-    
+
+
+
 
 <div class="predictor-timeline-item--high">
     <span class="predictor-timeline-item__level"><strong>RSR</strong> HIGH</span>
-    
+
     <span class="predictor-timeline-item__score">10.3</span>
-    
+
 </div>
 
   </div>
   <div class="govuk-grid-column-full">
-    
 
 
 
 
-        
-    
+
+
+
 
 <div class="predictor-timeline-item--medium">
     <span class="predictor-timeline-item__level"><strong>OSP/DC</strong> MEDIUM</span>
-    
+
     <span class="predictor-timeline-item__score">7.76</span>
-    
+
 </div>
 
   </div>
   <div class="govuk-grid-column-full">
-    
 
 
 
 
-        
+
+
 
 
 <div class="predictor-timeline-item--low">
     <span class="predictor-timeline-item__level"><strong>OSP/IIC</strong> LOW</span>
-    
+
     <span class="predictor-timeline-item__score">3.45</span>
-    
+
 </div>
 
   </div>
@@ -2689,16 +2689,16 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
         </main>
       </div>
-    
 
-    
+
+
       <footer class="govuk-footer">
   <div class="govuk-width-container">
-    
-    
+
+
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
-        
+
         <svg
           aria-hidden="true"
           focusable="false"
@@ -2714,14 +2714,14 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           />
         </svg>
         <span class="govuk-footer__licence-description">
-        
+
           All content is available under the
           <a
             class="govuk-footer__link"
             href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
             rel="license"
           >Open Government Licence v3.0</a>, except where otherwise stated
-        
+
         </span>
       </div>
       <div class="govuk-footer__meta-item">
@@ -2729,18 +2729,18 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           class="govuk-footer__link govuk-footer__copyright-logo"
           href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
         >
-        
+
           © Crown copyright
-        
+
         </a>
       </div>
     </div>
   </div>
 </footer>
 
-    
 
-    
+
+
   <script type="module" src="/assets/js/index.js"></script>
   <script type="module" src="/assets/js/predictor-timeline.js"></script>
 
@@ -2758,31 +2758,31 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#0b0c0c">
 
-    
+
       <link rel="icon" sizes="48x48" href="/assets/images/favicon.ico">
       <link rel="icon" sizes="any" href="/assets/images/favicon.svg" type="image/svg+xml">
       <link rel="mask-icon" href="/assets/images/govuk-icon-mask.svg" color="#0b0c0c">
       <link rel="apple-touch-icon" href="/assets/images/govuk-icon-180.png">
       <link rel="manifest" href="/assets/manifest.json">
-    
 
-    
+
+
   <link href="/assets/css/index.css" rel="stylesheet"/>
 
-    
+
   </head>
   <body class="govuk-template__body">
     <script>document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');</script>
-    
 
 
-    
+
+
       <a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
 
-    
 
-    
-  
+
+
+
 <header class="hmpps-header" role="banner">
   <div class="hmpps-header__container">
     <div class="hmpps-header__title">
@@ -2797,19 +2797,19 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
       <a class="hmpps-header__link hmpps-header__title__service-name" href="/">ARNS Frontend Components</a>
 
-      
+
     </div>
 
     <nav aria-label="Account navigation">
       <ul class="hmpps-header__navigation">
-        
+
           <li class="hmpps-header__navigation__item">
             <a data-qa="manageDetails" class="hmpps-header__link" href="/account-details" data-test="manage-account-link" rel="noopener noreferrer">
               <span data-qa=header-user-name>F. Last</span>
               <span class="hmpps-header__link__sub-text">Manage your details</span>
             </a>
           </li>
-        
+
 
         <li class="hmpps-header__navigation__item">
           <a data-qa="signOut" class="hmpps-header__link" href="/sign-out">Sign out</a>
@@ -2821,11 +2821,11 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
-    
+
       <div class="govuk-width-container">
-        
+
         <main class="govuk-main-wrapper govuk-body" id="main-content">
-          
+
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-one-third">
       <nav class="moj-side-navigation" aria-label="Side navigation" >
@@ -2835,44 +2835,44 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             <a href="/">Introduction</a>
           </li>
         </ul>
-    
+
       <h4 class="moj-side-navigation__title">Components</h4>
       <ul class="moj-side-navigation__list">
           <li class="moj-side-navigation__item">
             <a href="/mappa-widget">MAPPA widget</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/risk-flag-widget">Risk flag widget</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/rosh-widget">ROSH widget</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/predictor-badge">Predictor badge</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/expanded-predictor-badge">Expanded predictor badge</a>
           </li>
         </ul>
-    
+
       <h4 class="moj-side-navigation__title">Legacy components</h4>
       <ul class="moj-side-navigation__list">
           <li class="moj-side-navigation__item">
             <a href="/predictor-scores">Predictor scores</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/predictor-scores-indicator">Predictor scores indicator</a>
           </li>
-        
+
           <li class="moj-side-navigation__item moj-side-navigation__item--active">
             <a href="/predictor-timeline" aria-current="location">Predictor timeline</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline-item">Predictor timeline item</a>
           </li>
@@ -2881,12 +2881,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
     </div>
     <div class="govuk-grid-column-two-thirds">
-      
+
   <h1 class="govuk-heading-xl">
     Predictor timeline
   </h1>
   <div class="govuk-grid-column-full">
-    
+
 
 <div
   role="region"
@@ -2911,10 +2911,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         <h2 class="govuk-heading-l">Scores history</h2>
         <a id="predictor-timeline__toggle-all" href="#" class="govuk-link">Open all</a>
       </div>
-      
+
 
 <div class="moj-timeline predictor">
-    
+
     <div class="moj-timeline__item">
         <div class="moj-timeline__header">
             <p class="moj-timeline__byline">14 May 2019 at 12:00:00</p>
@@ -2927,56 +2927,56 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
-        
-    
+
+
 
 <div class="predictor-timeline-item--high">
     <span class="predictor-timeline-item__level"><strong>RSR</strong> HIGH</span>
-    
+
     <span class="predictor-timeline-item__score">10.3</span>
-    
+
 </div>
 </li>
-                    
+
                     <li>
 
 
 
 
-        
-    
+
+
 
 <div class="predictor-timeline-item--medium">
     <span class="predictor-timeline-item__level"><strong>OSP/DC</strong> MEDIUM</span>
-    
+
     <span class="predictor-timeline-item__score">7.76</span>
-    
+
 </div>
 </li>
-                    
-                    
+
+
                     <li>
 
 
 
 
-        
+
 
 
 <div class="predictor-timeline-item--low">
     <span class="predictor-timeline-item__level"><strong>OSP/IIC</strong> LOW</span>
-    
+
     <span class="predictor-timeline-item__score">3.45</span>
-    
+
 </div>
 </li>
-                    
+
                 </ul>
             </div>
             <a href="#" class="govuk-link predictor-timeline__toggle-section">Open</a>
         </div>
     </div>
-    
+
     <div class="moj-timeline__item">
         <div class="moj-timeline__header">
             <p class="moj-timeline__byline">12 September 2018 at 12:00:00</p>
@@ -2989,56 +2989,56 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
-        
-    
+
+
 
 <div class="predictor-timeline-item--medium">
     <span class="predictor-timeline-item__level"><strong>RSR</strong> MEDIUM</span>
-    
+
     <span class="predictor-timeline-item__score">5.34</span>
-    
+
 </div>
 </li>
-                    
+
                     <li>
 
 
 
 
-        
-    
+
+
 
 <div class="predictor-timeline-item--medium">
     <span class="predictor-timeline-item__level"><strong>OSP/C</strong> MEDIUM</span>
-    
+
     <span class="predictor-timeline-item__score">6.76</span>
-    
+
 </div>
 </li>
-                    
-                    
+
+
                     <li>
 
 
 
 
-        
+
 
 
 <div class="predictor-timeline-item--low">
     <span class="predictor-timeline-item__level"><strong>OSP/I</strong> LOW</span>
-    
+
     <span class="predictor-timeline-item__score">3.45</span>
-    
+
 </div>
 </li>
-                    
+
                 </ul>
             </div>
             <a href="#" class="govuk-link predictor-timeline__toggle-section">Open</a>
         </div>
     </div>
-    
+
 </div>
 
 <script src="/public/javascripts/predictors.js"></script>
@@ -3051,16 +3051,16 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
         </main>
       </div>
-    
 
-    
+
+
       <footer class="govuk-footer">
   <div class="govuk-width-container">
-    
-    
+
+
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
-        
+
         <svg
           aria-hidden="true"
           focusable="false"
@@ -3076,14 +3076,14 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           />
         </svg>
         <span class="govuk-footer__licence-description">
-        
+
           All content is available under the
           <a
             class="govuk-footer__link"
             href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
             rel="license"
           >Open Government Licence v3.0</a>, except where otherwise stated
-        
+
         </span>
       </div>
       <div class="govuk-footer__meta-item">
@@ -3091,18 +3091,18 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           class="govuk-footer__link govuk-footer__copyright-logo"
           href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
         >
-        
+
           © Crown copyright
-        
+
         </a>
       </div>
     </div>
   </div>
 </footer>
 
-    
 
-    
+
+
   <script type="module" src="/assets/js/index.js"></script>
   <script type="module" src="/assets/js/predictor-timeline.js"></script>
 
@@ -3120,31 +3120,31 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the risk flag 
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#0b0c0c">
 
-    
+
       <link rel="icon" sizes="48x48" href="/assets/images/favicon.ico">
       <link rel="icon" sizes="any" href="/assets/images/favicon.svg" type="image/svg+xml">
       <link rel="mask-icon" href="/assets/images/govuk-icon-mask.svg" color="#0b0c0c">
       <link rel="apple-touch-icon" href="/assets/images/govuk-icon-180.png">
       <link rel="manifest" href="/assets/manifest.json">
-    
 
-    
+
+
   <link href="/assets/css/index.css" rel="stylesheet"/>
 
-    
+
   </head>
   <body class="govuk-template__body">
     <script>document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');</script>
-    
 
 
-    
+
+
       <a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
 
-    
 
-    
-  
+
+
+
 <header class="hmpps-header" role="banner">
   <div class="hmpps-header__container">
     <div class="hmpps-header__title">
@@ -3159,19 +3159,19 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the risk flag 
 
       <a class="hmpps-header__link hmpps-header__title__service-name" href="/">ARNS Frontend Components</a>
 
-      
+
     </div>
 
     <nav aria-label="Account navigation">
       <ul class="hmpps-header__navigation">
-        
+
           <li class="hmpps-header__navigation__item">
             <a data-qa="manageDetails" class="hmpps-header__link" href="/account-details" data-test="manage-account-link" rel="noopener noreferrer">
               <span data-qa=header-user-name>F. Last</span>
               <span class="hmpps-header__link__sub-text">Manage your details</span>
             </a>
           </li>
-        
+
 
         <li class="hmpps-header__navigation__item">
           <a data-qa="signOut" class="hmpps-header__link" href="/sign-out">Sign out</a>
@@ -3183,11 +3183,11 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the risk flag 
 
 
 
-    
+
       <div class="govuk-width-container">
-        
+
         <main class="govuk-main-wrapper govuk-body" id="main-content">
-          
+
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-one-third">
       <nav class="moj-side-navigation" aria-label="Side navigation" >
@@ -3197,44 +3197,44 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the risk flag 
             <a href="/">Introduction</a>
           </li>
         </ul>
-    
+
       <h4 class="moj-side-navigation__title">Components</h4>
       <ul class="moj-side-navigation__list">
           <li class="moj-side-navigation__item">
             <a href="/mappa-widget">MAPPA widget</a>
           </li>
-        
+
           <li class="moj-side-navigation__item moj-side-navigation__item--active">
             <a href="/risk-flag-widget" aria-current="location">Risk flag widget</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/rosh-widget">ROSH widget</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/predictor-badge">Predictor badge</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/expanded-predictor-badge">Expanded predictor badge</a>
           </li>
         </ul>
-    
+
       <h4 class="moj-side-navigation__title">Legacy components</h4>
       <ul class="moj-side-navigation__list">
           <li class="moj-side-navigation__item">
             <a href="/predictor-scores">Predictor scores</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/predictor-scores-indicator">Predictor scores indicator</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline">Predictor timeline</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline-item">Predictor timeline item</a>
           </li>
@@ -3243,7 +3243,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the risk flag 
 
     </div>
     <div class="govuk-grid-column-two-thirds">
-      
+
   <h1 class="govuk-heading-xl">
     Risk flag widget
   </h1>
@@ -3252,17 +3252,17 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the risk flag 
       <aside class="risk-flag-widget" aria-label="Delius risk flags">
     <h3 class="govuk-heading-m">Delius risk flags (registers)</h3>
     <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
-    
-        
+
+
             <ul class="govuk-list" aria-label="Risk flags">
-            
+
                 <li>Hate Crime</li>
-            
+
                 <li>Assault</li>
-            
+
             </ul>
-        
-    
+
+
 </aside>
 
     </div>
@@ -3270,11 +3270,11 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the risk flag 
       <aside class="risk-flag-widget" aria-label="Delius risk flags">
     <h3 class="govuk-heading-m">Delius risk flags (registers)</h3>
     <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
-    
-        
+
+
             <p>No risks</p>
-        
-    
+
+
 </aside>
 
     </div>
@@ -3282,9 +3282,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the risk flag 
       <aside class="risk-flag-widget" aria-label="Delius risk flags">
     <h3 class="govuk-heading-m">Delius risk flags (registers)</h3>
     <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
-    
+
         <p>Something went wrong. We are unable to show risk flags at this time. Try again later.</p>
-    
+
 </aside>
 
     </div>
@@ -3295,16 +3295,16 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the risk flag 
 
         </main>
       </div>
-    
 
-    
+
+
       <footer class="govuk-footer">
   <div class="govuk-width-container">
-    
-    
+
+
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
-        
+
         <svg
           aria-hidden="true"
           focusable="false"
@@ -3320,14 +3320,14 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the risk flag 
           />
         </svg>
         <span class="govuk-footer__licence-description">
-        
+
           All content is available under the
           <a
             class="govuk-footer__link"
             href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
             rel="license"
           >Open Government Licence v3.0</a>, except where otherwise stated
-        
+
         </span>
       </div>
       <div class="govuk-footer__meta-item">
@@ -3335,18 +3335,18 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the risk flag 
           class="govuk-footer__link govuk-footer__copyright-logo"
           href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
         >
-        
+
           © Crown copyright
-        
+
         </a>
       </div>
     </div>
   </div>
 </footer>
 
-    
 
-    
+
+
   <script type="module" src="/assets/js/index.js"></script>
   <script type="module" src="/assets/js/predictor-timeline.js"></script>
 
@@ -3364,31 +3364,31 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#0b0c0c">
 
-    
+
       <link rel="icon" sizes="48x48" href="/assets/images/favicon.ico">
       <link rel="icon" sizes="any" href="/assets/images/favicon.svg" type="image/svg+xml">
       <link rel="mask-icon" href="/assets/images/govuk-icon-mask.svg" color="#0b0c0c">
       <link rel="apple-touch-icon" href="/assets/images/govuk-icon-180.png">
       <link rel="manifest" href="/assets/manifest.json">
-    
 
-    
+
+
   <link href="/assets/css/index.css" rel="stylesheet"/>
 
-    
+
   </head>
   <body class="govuk-template__body">
     <script>document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');</script>
-    
 
 
-    
+
+
       <a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
 
-    
 
-    
-  
+
+
+
 <header class="hmpps-header" role="banner">
   <div class="hmpps-header__container">
     <div class="hmpps-header__title">
@@ -3403,19 +3403,19 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
 
       <a class="hmpps-header__link hmpps-header__title__service-name" href="/">ARNS Frontend Components</a>
 
-      
+
     </div>
 
     <nav aria-label="Account navigation">
       <ul class="hmpps-header__navigation">
-        
+
           <li class="hmpps-header__navigation__item">
             <a data-qa="manageDetails" class="hmpps-header__link" href="/account-details" data-test="manage-account-link" rel="noopener noreferrer">
               <span data-qa=header-user-name>F. Last</span>
               <span class="hmpps-header__link__sub-text">Manage your details</span>
             </a>
           </li>
-        
+
 
         <li class="hmpps-header__navigation__item">
           <a data-qa="signOut" class="hmpps-header__link" href="/sign-out">Sign out</a>
@@ -3427,11 +3427,11 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
 
 
 
-    
+
       <div class="govuk-width-container">
-        
+
         <main class="govuk-main-wrapper govuk-body" id="main-content">
-          
+
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-one-third">
       <nav class="moj-side-navigation" aria-label="Side navigation" >
@@ -3441,44 +3441,44 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
             <a href="/">Introduction</a>
           </li>
         </ul>
-    
+
       <h4 class="moj-side-navigation__title">Components</h4>
       <ul class="moj-side-navigation__list">
           <li class="moj-side-navigation__item">
             <a href="/mappa-widget">MAPPA widget</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/risk-flag-widget">Risk flag widget</a>
           </li>
-        
+
           <li class="moj-side-navigation__item moj-side-navigation__item--active">
             <a href="/rosh-widget" aria-current="location">ROSH widget</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/predictor-badge">Predictor badge</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/expanded-predictor-badge">Expanded predictor badge</a>
           </li>
         </ul>
-    
+
       <h4 class="moj-side-navigation__title">Legacy components</h4>
       <ul class="moj-side-navigation__list">
           <li class="moj-side-navigation__item">
             <a href="/predictor-scores">Predictor scores</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/predictor-scores-indicator">Predictor scores indicator</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline">Predictor timeline</a>
           </li>
-        
+
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline-item">Predictor timeline item</a>
           </li>
@@ -3487,7 +3487,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
 
     </div>
     <div class="govuk-grid-column-two-thirds">
-      
+
   <h1 class="govuk-heading-xl">
     ROSH widget
   </h1>
@@ -3561,7 +3561,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
       <h2>Examples</h2>
       <div id="rosh-widget-both" class="govuk-grid-row">
         <div id="rosh-widget-both-inner" class="govuk-grid-column-two-thirds">
-          
 
 
 
@@ -3571,51 +3570,52 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
 
 
 
-  
-    
-  
-  
-    
-  
-
-  
-    
-  
-  
-    
-  
-
-  
-    
-  
-  
-    
-  
-
-  
-    
-  
-  
-    
-  
-
-  
-  
-    
-  
 
 
 
-  <aside class="rosh-widget 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <aside class="rosh-widget
+
     rosh-widget--very-high
-    
+
 "
          aria-label="Risk of serious harm summary">
     <h3 class="govuk-heading-m"><strong>
-    
+
     VERY HIGH
-    
+
 </strong> ROSH</h3>
     <p class="govuk-body-m">Risk of serious harm</p>
     <p class="govuk-hint govuk-body-m">Last updated: 10 October 2021</p>
@@ -3625,170 +3625,169 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
         <thead class="govuk-table__head">
         <tr class="govuk-table__row">
           <th class="govuk-table__header">Risk to</th>
-          
+
             <th class="govuk-table__header">Community</th>
-          
-          
+
+
             <th class="govuk-table__header">Custody</th>
-          
+
         </tr>
         </thead>
         <tbody class="govuk-table__body">
-        
+
           <tr class="govuk-table__row">
             <th data-qa='riskToLabelValue1'
                 class="govuk-table__header">Children</th>
-            
+
               <td data-qa='riskToCommunityValue1'
-                  class="govuk-table__cell 
-  
+                  class="govuk-table__cell
+
     rosh-widget__risk--low
-  
+
 ">
-    
+
     Low
-    
+
 </td>
-            
-            
+
+
               <td data-qa='riskToCustodyValue1'
-                  class="govuk-table__cell 
-  
+                  class="govuk-table__cell
+
     rosh-widget__risk--medium
-    
+
 ">
-    
+
     Medium
-    
+
 </td>
-            
+
           </tr>
-        
+
           <tr class="govuk-table__row">
             <th data-qa='riskToLabelValue2'
                 class="govuk-table__header">Public</th>
-            
+
               <td data-qa='riskToCommunityValue2'
-                  class="govuk-table__cell 
-  
+                  class="govuk-table__cell
+
     rosh-widget__risk--very-high
-    
+
 ">
-    
+
     Very high
-    
+
 </td>
-            
-            
+
+
               <td data-qa='riskToCustodyValue2'
-                  class="govuk-table__cell 
-  
+                  class="govuk-table__cell
+
     rosh-widget__risk--high
-    
+
 ">
-    
+
     High
-    
+
 </td>
-            
+
           </tr>
-        
+
           <tr class="govuk-table__row">
             <th data-qa='riskToLabelValue3'
                 class="govuk-table__header">Known adult</th>
-            
+
               <td data-qa='riskToCommunityValue3'
-                  class="govuk-table__cell 
-  
+                  class="govuk-table__cell
+
     rosh-widget__risk--medium
-    
+
 ">
-    
+
     Medium
-    
+
 </td>
-            
-            
+
+
               <td data-qa='riskToCustodyValue3'
-                  class="govuk-table__cell 
-  
+                  class="govuk-table__cell
+
     rosh-widget__risk--medium
-    
+
 ">
-    
+
     Medium
-    
+
 </td>
-            
+
           </tr>
-        
+
           <tr class="govuk-table__row">
             <th data-qa='riskToLabelValue4'
                 class="govuk-table__header">Staff</th>
-            
+
               <td data-qa='riskToCommunityValue4'
-                  class="govuk-table__cell 
-  
+                  class="govuk-table__cell
+
     rosh-widget__risk--high
-    
+
 ">
-    
+
     High
-    
+
 </td>
-            
-            
+
+
               <td data-qa='riskToCustodyValue4'
-                  class="govuk-table__cell 
-  
+                  class="govuk-table__cell
+
     rosh-widget__risk--very-high
-    
+
 ">
-    
+
     Very high
-    
+
 </td>
-            
+
           </tr>
-        
+
           <tr class="govuk-table__row">
             <th data-qa='riskToLabelValue5'
                 class="govuk-table__header">Prisoners</th>
-            
+
               <td data-qa='riskToCommunityValue5'
-                  class="govuk-table__cell 
-  
+                  class="govuk-table__cell
+
 ">
-    
+
     N/A
-  
+
 </td>
-            
-            
+
+
               <td data-qa='riskToCustodyValue5'
-                  class="govuk-table__cell 
-  
+                  class="govuk-table__cell
+
     rosh-widget__risk--medium
-    
+
 ">
-    
+
     Medium
-    
+
 </td>
-            
+
           </tr>
-        
+
         </tbody>
       </table>
     </div>
   </aside>
-  
+
 
         </div>
       </div>
       <div id="rosh-widget-community" class="govuk-grid-row">
         <div id="rosh-widget-community-inner" class="govuk-grid-column-two-thirds">
-          
 
 
 
@@ -3798,41 +3797,42 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
 
 
 
-  
-    
-  
-  
-
-  
-    
-  
-  
-
-  
-    
-  
-  
-
-  
-    
-  
-  
-
-  
-  
 
 
 
-  <aside class="rosh-widget 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <aside class="rosh-widget
+
     rosh-widget--medium
-    
+
 "
          aria-label="Risk of serious harm summary">
     <h3 class="govuk-heading-m"><strong>
-    
+
     MEDIUM
-    
+
 </strong> ROSH</h3>
     <p class="govuk-body-m">Risk of serious harm</p>
     <p class="govuk-hint govuk-body-m">Last updated: 10 October 2021</p>
@@ -3842,113 +3842,112 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
         <thead class="govuk-table__head">
         <tr class="govuk-table__row">
           <th class="govuk-table__header">Risk to</th>
-          
+
             <th class="govuk-table__header">Community</th>
-          
-          
+
+
         </tr>
         </thead>
         <tbody class="govuk-table__body">
-        
+
           <tr class="govuk-table__row">
             <th data-qa='riskToLabelValue1'
                 class="govuk-table__header">Children</th>
-            
+
               <td data-qa='riskToCommunityValue1'
-                  class="govuk-table__cell 
-  
+                  class="govuk-table__cell
+
     rosh-widget__risk--low
-  
+
 ">
-    
+
     Low
-    
+
 </td>
-            
-            
+
+
           </tr>
-        
+
           <tr class="govuk-table__row">
             <th data-qa='riskToLabelValue2'
                 class="govuk-table__header">Public</th>
-            
+
               <td data-qa='riskToCommunityValue2'
-                  class="govuk-table__cell 
-  
+                  class="govuk-table__cell
+
     rosh-widget__risk--medium
-    
+
 ">
-    
+
     Medium
-    
+
 </td>
-            
-            
+
+
           </tr>
-        
+
           <tr class="govuk-table__row">
             <th data-qa='riskToLabelValue3'
                 class="govuk-table__header">Known adult</th>
-            
+
               <td data-qa='riskToCommunityValue3'
-                  class="govuk-table__cell 
-  
+                  class="govuk-table__cell
+
     rosh-widget__risk--low
-  
+
 ">
-    
+
     Low
-    
+
 </td>
-            
-            
+
+
           </tr>
-        
+
           <tr class="govuk-table__row">
             <th data-qa='riskToLabelValue4'
                 class="govuk-table__header">Staff</th>
-            
+
               <td data-qa='riskToCommunityValue4'
-                  class="govuk-table__cell 
-  
+                  class="govuk-table__cell
+
     rosh-widget__risk--high
-    
+
 ">
-    
+
     High
-    
+
 </td>
-            
-            
+
+
           </tr>
-        
+
           <tr class="govuk-table__row">
             <th data-qa='riskToLabelValue5'
                 class="govuk-table__header">Prisoners</th>
-            
+
               <td data-qa='riskToCommunityValue5'
-                  class="govuk-table__cell 
-  
+                  class="govuk-table__cell
+
 ">
-    
+
     N/A
-  
+
 </td>
-            
-            
+
+
           </tr>
-        
+
         </tbody>
       </table>
     </div>
   </aside>
-  
+
 
         </div>
       </div>
       <div id="rosh-widget-custody" class="govuk-grid-row">
         <div id="rosh-widget-custody-inner" class="govuk-grid-column-two-thirds">
-          
 
 
 
@@ -3958,43 +3957,44 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
 
 
 
-  
-  
-    
-  
-
-  
-  
-    
-  
-
-  
-  
-    
-  
-
-  
-  
-    
-  
-
-  
-  
-    
-  
 
 
 
-  <aside class="rosh-widget 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <aside class="rosh-widget
+
     rosh-widget--high
-    
+
 "
          aria-label="Risk of serious harm summary">
     <h3 class="govuk-heading-m"><strong>
-    
+
     HIGH
-    
+
 </strong> ROSH</h3>
     <p class="govuk-body-m">Risk of serious harm</p>
     <p class="govuk-hint govuk-body-m">Last updated: 10 October 2021</p>
@@ -4004,115 +4004,115 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
         <thead class="govuk-table__head">
         <tr class="govuk-table__row">
           <th class="govuk-table__header">Risk to</th>
-          
-          
+
+
             <th class="govuk-table__header">Custody</th>
-          
+
         </tr>
         </thead>
         <tbody class="govuk-table__body">
-        
+
           <tr class="govuk-table__row">
             <th data-qa='riskToLabelValue1'
                 class="govuk-table__header">Children</th>
-            
-            
+
+
               <td data-qa='riskToCustodyValue1'
-                  class="govuk-table__cell 
-  
+                  class="govuk-table__cell
+
     rosh-widget__risk--medium
-    
+
 ">
-    
+
     Medium
-    
+
 </td>
-            
+
           </tr>
-        
+
           <tr class="govuk-table__row">
             <th data-qa='riskToLabelValue2'
                 class="govuk-table__header">Public</th>
-            
-            
+
+
               <td data-qa='riskToCustodyValue2'
-                  class="govuk-table__cell 
-  
+                  class="govuk-table__cell
+
     rosh-widget__risk--high
-    
+
 ">
-    
+
     High
-    
+
 </td>
-            
+
           </tr>
-        
+
           <tr class="govuk-table__row">
             <th data-qa='riskToLabelValue3'
                 class="govuk-table__header">Known adult</th>
-            
-            
+
+
               <td data-qa='riskToCustodyValue3'
-                  class="govuk-table__cell 
-  
+                  class="govuk-table__cell
+
     rosh-widget__risk--medium
-    
+
 ">
-    
+
     Medium
-    
+
 </td>
-            
+
           </tr>
-        
+
           <tr class="govuk-table__row">
             <th data-qa='riskToLabelValue4'
                 class="govuk-table__header">Staff</th>
-            
-            
+
+
               <td data-qa='riskToCustodyValue4'
-                  class="govuk-table__cell 
-  
+                  class="govuk-table__cell
+
     rosh-widget__risk--very-high
-    
+
 ">
-    
+
     Very high
-    
+
 </td>
-            
+
           </tr>
-        
+
           <tr class="govuk-table__row">
             <th data-qa='riskToLabelValue5'
                 class="govuk-table__header">Prisoners</th>
-            
-            
+
+
               <td data-qa='riskToCustodyValue5'
-                  class="govuk-table__cell 
-  
+                  class="govuk-table__cell
+
     rosh-widget__risk--low
-  
+
 ">
-    
+
     Low
-    
+
 </td>
-            
+
           </tr>
-        
+
         </tbody>
       </table>
     </div>
   </aside>
-  
+
 
         </div>
       </div>
       <div id="rosh-widget-no-data" class="govuk-grid-row">
         <div id="rosh-widget-no-matching-data" class="govuk-grid-column-two-thirds">
-          
+
 
 
 
@@ -4137,7 +4137,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
       </div>
       <div id="rosh-widget-error" class="govuk-grid-row">
         <div id="rosh-widget-null-data" class="govuk-grid-column-two-thirds">
-          
+
 
 
 
@@ -4168,16 +4168,16 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
 
         </main>
       </div>
-    
 
-    
+
+
       <footer class="govuk-footer">
   <div class="govuk-width-container">
-    
-    
+
+
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
-        
+
         <svg
           aria-hidden="true"
           focusable="false"
@@ -4193,14 +4193,14 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
           />
         </svg>
         <span class="govuk-footer__licence-description">
-        
+
           All content is available under the
           <a
             class="govuk-footer__link"
             href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
             rel="license"
           >Open Government Licence v3.0</a>, except where otherwise stated
-        
+
         </span>
       </div>
       <div class="govuk-footer__meta-item">
@@ -4208,18 +4208,18 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
           class="govuk-footer__link govuk-footer__copyright-logo"
           href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
         >
-        
+
           © Crown copyright
-        
+
         </a>
       </div>
     </div>
   </div>
 </footer>
 
-    
 
-    
+
+
   <script type="module" src="/assets/js/index.js"></script>
   <script type="module" src="/assets/js/predictor-timeline.js"></script>
 

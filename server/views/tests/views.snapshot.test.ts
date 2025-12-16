@@ -60,4 +60,9 @@ describe('View Snapshot Tests: All Pages', () => {
     const response = await request(app).get('/expanded-predictor-badge').expect(200)
     expect(response.text).toMatchSnapshot()
   })
+
+  it('should match snapshot for the predictor scale page (/predictor-scale)', async () => {
+    const response = await request(app).get('/predictor-scale').expect(200)
+    expect(response.text).toMatchSnapshot()
+  })
 })
