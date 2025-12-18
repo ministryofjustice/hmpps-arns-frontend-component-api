@@ -2069,7 +2069,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
             <li>custody (enum - LOW, MEDIUM, HIGH, VERY_HIGH, N/A)</li>
           </ul>
         </li>
-        <li>lastUpdated (string - formatted like 10 October 2021)</li>
+        <li>lastUpdated (string - format 'DD MMMM YYYY' e.g '10 October 2021')</li>
       </ul>
       <h4>E.g.</h4>
       <pre>
