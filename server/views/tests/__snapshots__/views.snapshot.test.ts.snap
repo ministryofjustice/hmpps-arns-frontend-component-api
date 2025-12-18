@@ -2041,9 +2041,76 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
   <h1 class="govuk-heading-xl">
     Rosh widget
   </h1>
+
   <div id="rosh-widget-wrapper" class="govuk-grid-row">
-    <div id="rosh-widget" class="govuk-grid-column-one-third">
-      
+    <div class="govuk-grid-column-full">
+      <h2>How to use</h2>
+      <p>
+        Refer to the <a href="https://dsdmoj.atlassian.net/wiki/spaces/NDSS/pages/4472635638/Risk+of+Serious+Harm+ROSH+component">Risk of Serious Harm (ROSH) component</a>
+        Confluence documentation for usage details.
+      </p>
+      <h3>Code</h3>
+      <p>
+        The <a href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/82d8d1dd544e386bcaa58ea3f64cf2fade3eaec6/server/views/partials/rosh-widget">ROSH widget Nunjucks macro</a> is available on GitHub.
+        The <a href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/a9c439f504404b3afe77306d1d468d17bbd453d5/assets/scss/partials/risk/_rosh-widget.scss">ROSH widget SCSS</a> is available on GitHub.
+      </p>
+      <h3>Input data format</h3>
+      <p>
+        The ROSH widget includes the following fields, which must follow the specified format:
+      </p>
+      <ul>
+        <li>hasBeenCompleted (boolean)</li>
+        <li>overallRisk (enum - LOW, MEDIUM, HIGH, VERY_HIGH)</li>
+        <li>risks (array)
+          <ul>
+            <li>riskTo (enum - Children, Public, Known adult, Staff, Prisoners)</li>
+            <li>community (enum - LOW, MEDIUM, HIGH, VERY_HIGH, N/A)</li>
+            <li>custody (enum - LOW, MEDIUM, HIGH, VERY_HIGH, N/A)</li>
+          </ul>
+        </li>
+        <li>lastUpdated (string - formatted like 10th October 2021)</li>
+      </ul>
+      <h4>E.g.</h4>
+      <pre>
+        <code>
+{
+  hasBeenCompleted: true,
+  overallRisk: 'VERY_HIGH',
+  risks: [
+    {
+      riskTo: 'Children',
+      community: 'LOW',
+      custody: 'MEDIUM',
+    },
+    {
+      riskTo: 'Public',
+      community: 'VERY_HIGH',
+      custody: 'HIGH',
+    },
+    {
+      riskTo: 'Known Adult',
+      community: 'MEDIUM',
+      custody: 'MEDIUM',
+    },
+    {
+      riskTo: 'Staff',
+      community: 'HIGH',
+      custody: 'VERY_HIGH',
+    },
+    {
+      riskTo: 'Prisoners',
+      community: 'MEDIUM',
+      custody: 'N/A',
+    },
+  ],
+  lastUpdated: '10th October 2021',
+}
+        </code>
+      </pre>
+      <h2>Examples</h2>
+      <div id="rosh-widget-both" class="govuk-grid-row">
+        <div id="rosh-widget-both-inner" class="govuk-grid-column-two-thirds">
+          
 
 
 
@@ -2053,50 +2120,106 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
 
 
 
+  
+    
+  
+  
+    
+  
 
-    <aside class="rosh-widget 
+  
+    
+  
+  
+    
+  
+
+  
+    
+  
+  
+    
+  
+
+  
+    
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+
+
+  <aside class="rosh-widget 
     
     rosh-widget--very-high
     
-" aria-label="Risk of serious harm summary">
-        <h3 class="govuk-heading-m">
-            <strong>
+"
+         aria-label="Risk of serious harm summary">
+    <h3 class="govuk-heading-m"><strong>
     
     VERY HIGH
     
 </strong> ROSH</h3>
-        <p class="govuk-body-m">Risk of serious harm</p>
-        <p class="govuk-hint govuk-body-m">Last updated: 10th October 2021</p>
-
+    <p class="govuk-body-m">Risk of serious harm</p>
+    <p class="govuk-hint govuk-body-m">Last updated: 10th October 2021</p>
+    <div class="moj-scrollable-pane">
+      <table class="govuk-table rosh-widget__table">
+        <caption class="govuk-visually-hidden">Risk of serious harm in Community</caption>
+        <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header">Risk to</th>
+          
+            <th class="govuk-table__header">Community</th>
+          
+          
+            <th class="govuk-table__header">Custody</th>
+          
+        </tr>
+        </thead>
+        <tbody class="govuk-table__body">
         
-    
-        <table class="govuk-table rosh-widget__table">
-            <caption class="govuk-visually-hidden">Risk of serious harm in Community</caption>
-            <thead class="govuk-table__head">
-                <tr class="govuk-table__row">
-                    <th class="govuk-table__header">Risk to</th>
-                    <th class="govuk-table__header">Community</th>
-                </tr>
-            </thead>
-            <tbody class="govuk-table__body">
-                
-                    <tr class="govuk-table__row">
-                        <th class="govuk-table__header">Children</th>
-                        <td class="govuk-table__cell 
-    
+          <tr class="govuk-table__row">
+            <th data-qa='riskToLabelValue1'
+                class="govuk-table__header">Children</th>
+            
+              <td data-qa='riskToCommunityValue1'
+                  class="govuk-table__cell 
+  
     rosh-widget__risk--low
   
 ">
     
     Low
-  
-</td>
-                    </tr>
-                
-                    <tr class="govuk-table__row">
-                        <th class="govuk-table__header">Public</th>
-                        <td class="govuk-table__cell 
     
+</td>
+            
+            
+              <td data-qa='riskToCustodyValue1'
+                  class="govuk-table__cell 
+  
+    rosh-widget__risk--medium
+    
+">
+    
+    Medium
+    
+</td>
+            
+          </tr>
+        
+          <tr class="govuk-table__row">
+            <th data-qa='riskToLabelValue2'
+                class="govuk-table__header">Public</th>
+            
+              <td data-qa='riskToCommunityValue2'
+                  class="govuk-table__cell 
+  
     rosh-widget__risk--very-high
     
 ">
@@ -2104,25 +2227,11 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
     Very high
     
 </td>
-                    </tr>
-                
-                    <tr class="govuk-table__row">
-                        <th class="govuk-table__header">Known Adult</th>
-                        <td class="govuk-table__cell 
-    
-    rosh-widget__risk--medium
-    
-">
-    
-    Medium
-    
-</td>
-                    </tr>
-                
-                    <tr class="govuk-table__row">
-                        <th class="govuk-table__header">Staff</th>
-                        <td class="govuk-table__cell 
-    
+            
+            
+              <td data-qa='riskToCustodyValue2'
+                  class="govuk-table__cell 
+  
     rosh-widget__risk--high
     
 ">
@@ -2130,41 +2239,57 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
     High
     
 </td>
-                    </tr>
-                
-            </tbody>
-        </table>
-    
-
+            
+          </tr>
         
-    
-        <table class="govuk-table rosh-widget__table">
-            <caption class="govuk-visually-hidden">Risk of serious harm in Custody</caption>
-            <thead class="govuk-table__head">
-                <tr class="govuk-table__row">
-                    <th class="govuk-table__header">Risk to</th>
-                    <th class="govuk-table__header">Custody</th>
-                </tr>
-            </thead>
-            <tbody class="govuk-table__body">
-                
-                    <tr class="govuk-table__row">
-                        <th class="govuk-table__header">Children</th>
-                        <td class="govuk-table__cell 
-    
-    rosh-widget__risk--low
+          <tr class="govuk-table__row">
+            <th data-qa='riskToLabelValue3'
+                class="govuk-table__header">Known adult</th>
+            
+              <td data-qa='riskToCommunityValue3'
+                  class="govuk-table__cell 
   
+    rosh-widget__risk--medium
+    
 ">
     
-    Low
-  
-</td>
-                    </tr>
-                
-                    <tr class="govuk-table__row">
-                        <th class="govuk-table__header">Public</th>
-                        <td class="govuk-table__cell 
+    Medium
     
+</td>
+            
+            
+              <td data-qa='riskToCustodyValue3'
+                  class="govuk-table__cell 
+  
+    rosh-widget__risk--medium
+    
+">
+    
+    Medium
+    
+</td>
+            
+          </tr>
+        
+          <tr class="govuk-table__row">
+            <th data-qa='riskToLabelValue4'
+                class="govuk-table__header">Staff</th>
+            
+              <td data-qa='riskToCommunityValue4'
+                  class="govuk-table__cell 
+  
+    rosh-widget__risk--high
+    
+">
+    
+    High
+    
+</td>
+            
+            
+              <td data-qa='riskToCustodyValue4'
+                  class="govuk-table__cell 
+  
     rosh-widget__risk--very-high
     
 ">
@@ -2172,12 +2297,26 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
     Very high
     
 </td>
-                    </tr>
-                
-                    <tr class="govuk-table__row">
-                        <th class="govuk-table__header">Known Adult</th>
-                        <td class="govuk-table__cell 
+            
+          </tr>
+        
+          <tr class="govuk-table__row">
+            <th data-qa='riskToLabelValue5'
+                class="govuk-table__header">Prisoners</th>
+            
+              <td data-qa='riskToCommunityValue5'
+                  class="govuk-table__cell 
+  
+">
     
+    N/A
+  
+</td>
+            
+            
+              <td data-qa='riskToCustodyValue5'
+                  class="govuk-table__cell 
+  
     rosh-widget__risk--medium
     
 ">
@@ -2185,44 +2324,344 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
     Medium
     
 </td>
-                    </tr>
-                
-                    <tr class="govuk-table__row">
-                        <th class="govuk-table__header">Staff</th>
-                        <td class="govuk-table__cell 
-    
-    rosh-widget__risk--high
-    
-">
-    
-    High
-    
-</td>
-                    </tr>
-                
-                    <tr class="govuk-table__row">
-                        <th class="govuk-table__header">Prisoners</th>
-                        <td class="govuk-table__cell 
-    
-    rosh-widget__risk--medium
-    
-">
-    
-    Medium
-    
-</td>
-                    </tr>
-                
-            </tbody>
-        </table>
-    
-
-    </aside>
-
-
+            
+          </tr>
+        
+        </tbody>
+      </table>
     </div>
-    <div id="rosh-widget-no-matching-data" class="govuk-grid-column-one-third">
-      
+  </aside>
+  
+
+        </div>
+      </div>
+      <div id="rosh-widget-community" class="govuk-grid-row">
+        <div id="rosh-widget-community-inner" class="govuk-grid-column-two-thirds">
+          
+
+
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+  
+    
+  
+  
+
+  
+    
+  
+  
+
+  
+    
+  
+  
+
+  
+  
+
+
+
+  <aside class="rosh-widget 
+    
+    rosh-widget--medium
+    
+"
+         aria-label="Risk of serious harm summary">
+    <h3 class="govuk-heading-m"><strong>
+    
+    MEDIUM
+    
+</strong> ROSH</h3>
+    <p class="govuk-body-m">Risk of serious harm</p>
+    <p class="govuk-hint govuk-body-m">Last updated: 10th October 2021</p>
+    <div class="moj-scrollable-pane">
+      <table class="govuk-table rosh-widget__table">
+        <caption class="govuk-visually-hidden">Risk of serious harm in Community</caption>
+        <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header">Risk to</th>
+          
+            <th class="govuk-table__header">Community</th>
+          
+          
+        </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+        
+          <tr class="govuk-table__row">
+            <th data-qa='riskToLabelValue1'
+                class="govuk-table__header">Children</th>
+            
+              <td data-qa='riskToCommunityValue1'
+                  class="govuk-table__cell 
+  
+    rosh-widget__risk--low
+  
+">
+    
+    Low
+    
+</td>
+            
+            
+          </tr>
+        
+          <tr class="govuk-table__row">
+            <th data-qa='riskToLabelValue2'
+                class="govuk-table__header">Public</th>
+            
+              <td data-qa='riskToCommunityValue2'
+                  class="govuk-table__cell 
+  
+    rosh-widget__risk--medium
+    
+">
+    
+    Medium
+    
+</td>
+            
+            
+          </tr>
+        
+          <tr class="govuk-table__row">
+            <th data-qa='riskToLabelValue3'
+                class="govuk-table__header">Known adult</th>
+            
+              <td data-qa='riskToCommunityValue3'
+                  class="govuk-table__cell 
+  
+    rosh-widget__risk--low
+  
+">
+    
+    Low
+    
+</td>
+            
+            
+          </tr>
+        
+          <tr class="govuk-table__row">
+            <th data-qa='riskToLabelValue4'
+                class="govuk-table__header">Staff</th>
+            
+              <td data-qa='riskToCommunityValue4'
+                  class="govuk-table__cell 
+  
+    rosh-widget__risk--high
+    
+">
+    
+    High
+    
+</td>
+            
+            
+          </tr>
+        
+          <tr class="govuk-table__row">
+            <th data-qa='riskToLabelValue5'
+                class="govuk-table__header">Prisoners</th>
+            
+              <td data-qa='riskToCommunityValue5'
+                  class="govuk-table__cell 
+  
+">
+    
+    N/A
+  
+</td>
+            
+            
+          </tr>
+        
+        </tbody>
+      </table>
+    </div>
+  </aside>
+  
+
+        </div>
+      </div>
+      <div id="rosh-widget-custody" class="govuk-grid-row">
+        <div id="rosh-widget-custody-inner" class="govuk-grid-column-two-thirds">
+          
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+
+
+  <aside class="rosh-widget 
+    
+    rosh-widget--high
+    
+"
+         aria-label="Risk of serious harm summary">
+    <h3 class="govuk-heading-m"><strong>
+    
+    HIGH
+    
+</strong> ROSH</h3>
+    <p class="govuk-body-m">Risk of serious harm</p>
+    <p class="govuk-hint govuk-body-m">Last updated: 10th October 2021</p>
+    <div class="moj-scrollable-pane">
+      <table class="govuk-table rosh-widget__table">
+        <caption class="govuk-visually-hidden">Risk of serious harm in Community</caption>
+        <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header">Risk to</th>
+          
+          
+            <th class="govuk-table__header">Custody</th>
+          
+        </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+        
+          <tr class="govuk-table__row">
+            <th data-qa='riskToLabelValue1'
+                class="govuk-table__header">Children</th>
+            
+            
+              <td data-qa='riskToCustodyValue1'
+                  class="govuk-table__cell 
+  
+    rosh-widget__risk--medium
+    
+">
+    
+    Medium
+    
+</td>
+            
+          </tr>
+        
+          <tr class="govuk-table__row">
+            <th data-qa='riskToLabelValue2'
+                class="govuk-table__header">Public</th>
+            
+            
+              <td data-qa='riskToCustodyValue2'
+                  class="govuk-table__cell 
+  
+    rosh-widget__risk--high
+    
+">
+    
+    High
+    
+</td>
+            
+          </tr>
+        
+          <tr class="govuk-table__row">
+            <th data-qa='riskToLabelValue3'
+                class="govuk-table__header">Known adult</th>
+            
+            
+              <td data-qa='riskToCustodyValue3'
+                  class="govuk-table__cell 
+  
+    rosh-widget__risk--medium
+    
+">
+    
+    Medium
+    
+</td>
+            
+          </tr>
+        
+          <tr class="govuk-table__row">
+            <th data-qa='riskToLabelValue4'
+                class="govuk-table__header">Staff</th>
+            
+            
+              <td data-qa='riskToCustodyValue4'
+                  class="govuk-table__cell 
+  
+    rosh-widget__risk--very-high
+    
+">
+    
+    Very high
+    
+</td>
+            
+          </tr>
+        
+          <tr class="govuk-table__row">
+            <th data-qa='riskToLabelValue5'
+                class="govuk-table__header">Prisoners</th>
+            
+            
+              <td data-qa='riskToCustodyValue5'
+                  class="govuk-table__cell 
+  
+    rosh-widget__risk--low
+  
+">
+    
+    Low
+    
+</td>
+            
+          </tr>
+        
+        </tbody>
+      </table>
+    </div>
+  </aside>
+  
+
+        </div>
+      </div>
+      <div id="rosh-widget-no-data" class="govuk-grid-row">
+        <div id="rosh-widget-no-matching-data" class="govuk-grid-column-two-thirds">
+          
 
 
 
@@ -2233,37 +2672,43 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
 
 
 
-    <aside class="rosh-widget rosh-widget--unknown" aria-label="Risk of serious harm summary">
-        <h3 class="govuk-heading-m">
-            <strong>UNKNOWN LEVEL</strong> ROSH</h3>
-        <p class="govuk-body-m">Risk of serious harm</p>
-        <p class="govuk-hint govuk-body-m">A ROSH summary has not been completed for this individual. Check OASys for this
+
+  <aside class="rosh-widget rosh-widget--unknown" aria-label="Risk of serious harm summary">
+    <h3 class="govuk-heading-m">
+      <strong>UNKNOWN LEVEL</strong> ROSH</h3>
+    <p class="govuk-body-m">Risk of serious harm</p>
+    <p class="govuk-hint govuk-body-m">A ROSH summary has not been completed for this individual. Check OASys for this
       person's current assessment status.</p>
-    </aside>
+  </aside>
 
 
-    </div>
-    <div id="rosh-widget-null-data" class="govuk-grid-column-one-third">
-      
-
-
-
-
-
+        </div>
+      </div>
+      <div id="rosh-widget-error" class="govuk-grid-row">
+        <div id="rosh-widget-null-data" class="govuk-grid-column-two-thirds">
+          
 
 
 
 
 
-    <aside class="rosh-widget" aria-label="Risk of serious harm summary">
-        <h3 class="govuk-heading-m">
-            <strong>UNKNOWN LEVEL</strong> ROSH</h3>
-        <p class="govuk-body-m">Risk of serious harm</p>
-        <p class="govuk-hint govuk-body-m">Something went wrong. We are unable to show ROSH information at this time. Try
+
+
+
+
+
+
+  <aside class="rosh-widget" aria-label="Risk of serious harm summary">
+    <h3 class="govuk-heading-m">
+      <strong>UNKNOWN LEVEL</strong> ROSH</h3>
+    <p class="govuk-body-m">Risk of serious harm</p>
+    <p class="govuk-hint govuk-body-m">Something went wrong. We are unable to show ROSH information at this time. Try
       again later.</p>
-    </aside>
+  </aside>
 
 
+        </div>
+      </div>
     </div>
   </div>
 

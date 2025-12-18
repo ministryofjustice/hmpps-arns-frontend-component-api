@@ -1,5 +1,3 @@
-{# Please ensure that any changes made here are also reflected in https://github.com/ministryofjustice/hmpps-risk-ui-elements #}
-
 {% macro getOverallRiskLevelClass(level) %}
     {% if level == 'VERY_HIGH' %}
     rosh-widget--very-high
@@ -21,11 +19,13 @@
     Medium
     {% elif level == 'LOW' %}
     Low
+    {% else %}
+    N/A
   {% endif %}
 {% endmacro %}
 
 {% macro getRiskLevelClass(level) %}
-    {% if level == 'VERY_HIGH' %}
+  {% if level == 'VERY_HIGH' %}
     rosh-widget__risk--very-high
     {% elif level == 'HIGH' %}
     rosh-widget__risk--high
@@ -36,52 +36,71 @@
   {% endif %}
 {% endmacro %}
 
-{% macro renderRiskTable(label, riskData) %}
-    {% if riskData %}
-        <table class="govuk-table rosh-widget__table">
-            <caption class="govuk-visually-hidden">Risk of serious harm in {{ label }}</caption>
-            <thead class="govuk-table__head">
-                <tr class="govuk-table__row">
-                    <th class="govuk-table__header">Risk to</th>
-                    <th class="govuk-table__header">{{ label }}</th>
-                </tr>
-            </thead>
-            <tbody class="govuk-table__body">
-                {% for key, value in riskData %}
-                    <tr class="govuk-table__row">
-                        <th class="govuk-table__header">{{ key }}</th>
-                        <td class="govuk-table__cell {{ getRiskLevelClass(value) }}">{{ getRiskLevelText(value) | default("No data") }}</td>
-                    </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-    {% endif %}
-{% endmacro %}
+{% set hideCommunityColumn = true %}
+{% set hideCustodyColumn = true %}
+
+{% for item in roshSummary.risks %}
+  {% if item.community != 'N/A' %}
+    {% set hideCommunityColumn = false %}
+  {% endif %}
+  {% if item.custody != 'N/A' %}
+    {% set hideCustodyColumn = false %}
+  {% endif %}
+{% endfor %}
 
 {% if roshSummary and roshSummary.hasBeenCompleted %}
-    <aside class="rosh-widget {{ getOverallRiskLevelClass(roshSummary.overallRisk) }}" aria-label="Risk of serious harm summary">
-        <h3 class="govuk-heading-m">
-            <strong>{{ getRiskLevelText(roshSummary.overallRisk) | upper }}</strong> ROSH</h3>
-        <p class="govuk-body-m">Risk of serious harm</p>
-        <p class="govuk-hint govuk-body-m">Last updated: {{ roshSummary.lastUpdated | default("Not known") }}</p>
-
-        {{ renderRiskTable("Community", roshSummary.riskInCommunity) }}
-        {{ renderRiskTable("Custody", roshSummary.riskInCustody) }}
-    </aside>
-{% elif roshSummary and not roshSummary.hasBeenCompleted %}
-    <aside class="rosh-widget rosh-widget--unknown" aria-label="Risk of serious harm summary">
-        <h3 class="govuk-heading-m">
-            <strong>UNKNOWN LEVEL</strong> ROSH</h3>
-        <p class="govuk-body-m">Risk of serious harm</p>
-        <p class="govuk-hint govuk-body-m">A ROSH summary has not been completed for this individual. Check OASys for this
+  <aside class="rosh-widget {{ getOverallRiskLevelClass(roshSummary.overallRisk) }}"
+         aria-label="Risk of serious harm summary">
+    <h3 class="govuk-heading-m"><strong>{{ getRiskLevelText(roshSummary.overallRisk) | upper }}</strong> ROSH</h3>
+    <p class="govuk-body-m">Risk of serious harm</p>
+    <p class="govuk-hint govuk-body-m">Last updated: {{ roshSummary.lastUpdated | default("Not known") }}</p>
+    <div class="moj-scrollable-pane">
+      <table class="govuk-table rosh-widget__table">
+        <caption class="govuk-visually-hidden">Risk of serious harm in Community</caption>
+        <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header">Risk to</th>
+          {% if not hideCommunityColumn %}
+            <th class="govuk-table__header">Community</th>
+          {% endif %}
+          {% if not hideCustodyColumn %}
+            <th class="govuk-table__header">Custody</th>
+          {% endif %}
+        </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+        {% for risk in roshSummary.risks %}
+          <tr class="govuk-table__row">
+            <th data-qa='riskToLabelValue{{ loop.index }}'
+                class="govuk-table__header">{{ risk.riskTo | capitalize }}</th>
+            {% if not hideCommunityColumn %}
+              <td data-qa='riskToCommunityValue{{ loop.index }}'
+                  class="govuk-table__cell {{ getRiskLevelClass(risk.community) }}">{{ getRiskLevelText(risk.community) or "N/A" }}</td>
+            {% endif %}
+            {% if not hideCustodyColumn %}
+              <td data-qa='riskToCustodyValue{{ loop.index }}'
+                  class="govuk-table__cell {{ getRiskLevelClass(risk.custody) }}">{{ getRiskLevelText(risk.custody) or "N/A" }}</td>
+            {% endif %}
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </aside>
+  {% elif roshSummary and not roshSummary.hasBeenCompleted %}
+  <aside class="rosh-widget rosh-widget--unknown" aria-label="Risk of serious harm summary">
+    <h3 class="govuk-heading-m">
+      <strong>UNKNOWN LEVEL</strong> ROSH</h3>
+    <p class="govuk-body-m">Risk of serious harm</p>
+    <p class="govuk-hint govuk-body-m">A ROSH summary has not been completed for this individual. Check OASys for this
       person's current assessment status.</p>
-    </aside>
+  </aside>
 {% else %}
-    <aside class="rosh-widget" aria-label="Risk of serious harm summary">
-        <h3 class="govuk-heading-m">
-            <strong>UNKNOWN LEVEL</strong> ROSH</h3>
-        <p class="govuk-body-m">Risk of serious harm</p>
-        <p class="govuk-hint govuk-body-m">Something went wrong. We are unable to show ROSH information at this time. Try
+  <aside class="rosh-widget" aria-label="Risk of serious harm summary">
+    <h3 class="govuk-heading-m">
+      <strong>UNKNOWN LEVEL</strong> ROSH</h3>
+    <p class="govuk-body-m">Risk of serious harm</p>
+    <p class="govuk-hint govuk-body-m">Something went wrong. We are unable to show ROSH information at this time. Try
       again later.</p>
-    </aside>
+  </aside>
 {% endif %}

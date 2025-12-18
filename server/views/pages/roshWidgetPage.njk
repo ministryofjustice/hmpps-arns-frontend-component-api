@@ -8,15 +8,98 @@
   <h1 class="govuk-heading-xl">
     {{ pageTitle }}
   </h1>
+
   <div id="rosh-widget-wrapper" class="govuk-grid-row">
-    <div id="rosh-widget" class="govuk-grid-column-one-third">
-      {{ roshWidget(widgetData.roshRiskSummary) }}
-    </div>
-    <div id="rosh-widget-no-matching-data" class="govuk-grid-column-one-third">
-      {{ roshWidget(widgetData) }}
-    </div>
-    <div id="rosh-widget-null-data" class="govuk-grid-column-one-third">
-      {{ roshWidget() }}
+    <div class="govuk-grid-column-full">
+      <h2>How to use</h2>
+      <p>
+        Refer to the <a href="https://dsdmoj.atlassian.net/wiki/spaces/NDSS/pages/4472635638/Risk+of+Serious+Harm+ROSH+component">Risk of Serious Harm (ROSH) component</a>
+        Confluence documentation for usage details.
+      </p>
+      <h3>Code</h3>
+      <p>
+        The <a href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/82d8d1dd544e386bcaa58ea3f64cf2fade3eaec6/server/views/partials/rosh-widget">ROSH widget Nunjucks macro</a> is available on GitHub.
+        The <a href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/a9c439f504404b3afe77306d1d468d17bbd453d5/assets/scss/partials/risk/_rosh-widget.scss">ROSH widget SCSS</a> is available on GitHub.
+      </p>
+      <h3>Input data format</h3>
+      <p>
+        The ROSH widget includes the following fields, which must follow the specified format:
+      </p>
+      <ul>
+        <li>hasBeenCompleted (boolean)</li>
+        <li>overallRisk (enum - LOW, MEDIUM, HIGH, VERY_HIGH)</li>
+        <li>risks (array)
+          <ul>
+            <li>riskTo (enum - Children, Public, Known adult, Staff, Prisoners)</li>
+            <li>community (enum - LOW, MEDIUM, HIGH, VERY_HIGH, N/A)</li>
+            <li>custody (enum - LOW, MEDIUM, HIGH, VERY_HIGH, N/A)</li>
+          </ul>
+        </li>
+        <li>lastUpdated (string - formatted like 10th October 2021)</li>
+      </ul>
+      <h4>E.g.</h4>
+      <pre>
+        <code>
+{
+  hasBeenCompleted: true,
+  overallRisk: 'VERY_HIGH',
+  risks: [
+    {
+      riskTo: 'Children',
+      community: 'LOW',
+      custody: 'MEDIUM',
+    },
+    {
+      riskTo: 'Public',
+      community: 'VERY_HIGH',
+      custody: 'HIGH',
+    },
+    {
+      riskTo: 'Known Adult',
+      community: 'MEDIUM',
+      custody: 'MEDIUM',
+    },
+    {
+      riskTo: 'Staff',
+      community: 'HIGH',
+      custody: 'VERY_HIGH',
+    },
+    {
+      riskTo: 'Prisoners',
+      community: 'MEDIUM',
+      custody: 'N/A',
+    },
+  ],
+  lastUpdated: '10th October 2021',
+}
+        </code>
+      </pre>
+      <h2>Examples</h2>
+      <div id="rosh-widget-both" class="govuk-grid-row">
+        <div id="rosh-widget-both-inner" class="govuk-grid-column-two-thirds">
+          {{ roshWidget(widgetData.roshRiskSummaryBoth) }}
+        </div>
+      </div>
+      <div id="rosh-widget-community" class="govuk-grid-row">
+        <div id="rosh-widget-community-inner" class="govuk-grid-column-two-thirds">
+          {{ roshWidget(widgetData.roshRiskSummaryCommunity) }}
+        </div>
+      </div>
+      <div id="rosh-widget-custody" class="govuk-grid-row">
+        <div id="rosh-widget-custody-inner" class="govuk-grid-column-two-thirds">
+          {{ roshWidget(widgetData.roshRiskSummaryCustody) }}
+        </div>
+      </div>
+      <div id="rosh-widget-no-data" class="govuk-grid-row">
+        <div id="rosh-widget-no-matching-data" class="govuk-grid-column-two-thirds">
+          {{ roshWidget(widgetData) }}
+        </div>
+      </div>
+      <div id="rosh-widget-error" class="govuk-grid-row">
+        <div id="rosh-widget-null-data" class="govuk-grid-column-two-thirds">
+          {{ roshWidget() }}
+        </div>
+      </div>
     </div>
   </div>
 {% endblock %}
