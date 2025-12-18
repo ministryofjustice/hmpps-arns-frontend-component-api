@@ -1,0 +1,142 @@
+{% extends "layouts/side-nav-layout.njk" %}
+{% from "../partials/expanded-predictor-badge/macro.njk" import expandedPredictorBadge %}
+
+{% set pageTitle = "Expanded predictor badge" %}
+{% set mainClasses = "govuk-body" %}
+
+{% block sideNavContent %}
+  <h1 class="govuk-heading-xl">
+    {{ pageTitle }}
+  </h1>
+
+  <div id="predictor-badge-wrapper" class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h2>How to use</h2>
+      <p>Refer to the
+        <a href="https://dsdmoj.atlassian.net/wiki/spaces/NDSS/pages/4471390821/Risk+badges">Risk Badges</a>
+        Confluence documentation for usage details.
+      <h3>Code</h3>
+      The
+      <a
+        href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/tree/main/server/views/partials/expanded-predictor-badge">expanded
+        predictor badge Nunjucks macro</a>
+      is available on GitHub.
+      <br>
+      The
+      <a
+        href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/main/assets/scss/partials/risk/_expanded-predictor-badge.scss">expanded
+        predictor badge SCSS</a>
+      is available on GitHub.
+      <h3>Input data format</h3>
+      <p>
+        The predictor badge includes the following fields, which must follow the specified format:
+      <ul>
+        <li>type</li>
+        <ul>
+          <li>OGRS4 generation predictor names (acronyms <strong>not</strong> allowed):</li>
+          <ul>
+            <li>All Reoffending Predictor</li>
+            <li>Violent Reoffending Predictor</li>
+            <li>Direct Contact – Sexual Reoffending Predictor</li>
+            <li>Images and Indirect Contact – Sexual Reoffending Predictor</li>
+            <li>Serious Violent Reoffending Predictor</li>
+            <li>Combined Serious Reoffending Predictor</li>
+          </ul>
+          <li>OGRS3 generation predictor names (acronyms allowed):</li>
+          <ul>
+            <li>Offender Group Reconviction Scale (OGRS)</li>
+            <li>OASys General Reoffending Predictor (OGP)</li>
+            <li>OASys Violent Predictor (OVP)</li>
+            <li>OASys Sexual Predictor – Direct Contact (OSP-DC)</li>
+            <li>OASys Sexual Predictor – Images and Indirect Contact (OSP-IIC)</li>
+            <li>Serious Non-Sexual Violence (SNSV)</li>
+            <li>Risk of Serious Recidivism (RSR)</li>
+          </ul>
+        </ul>
+        <li>level (enum - LOW, MEDIUM, HIGH, VERY_HIGH)</li>
+        <li>score</li>
+        <li>staticOrDynamic (enum - STATIC, DYNAMIC)</li>
+        <li>completedDate (string - format 'DD MMMM YYYY' e.g '10 October 2021')</li>
+      </ul>
+      </p>
+      <strong>E.g.</strong>
+      <pre><code>{
+  type: 'All Reoffending Predictor',
+  level: 'VERY_HIGH',
+  score: 78.89,
+  staticOrDynamic: 'DYNAMIC',
+  completedDate: '25 October 2025',
+}</code></pre>
+      </p>
+      <h2>Examples</h2>
+    </div>
+    <div class="govuk-grid-column-one-half">
+      <div class="govuk-!-margin-bottom-4">
+        {{ expandedPredictorBadge(badgeRiskScores.lowStaticRiskScore, false) }}
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        {{ expandedPredictorBadge(badgeRiskScores.lowStaticRiskScore, true) }}
+      </div>
+    </div>
+    <div class="govuk-grid-column-one-half">
+      <div class="govuk-!-margin-bottom-4">
+        {{ expandedPredictorBadge(badgeRiskScores.lowDynamicRiskScore, false) }}
+      </div>
+      <div class="govuk-!-margin-bottom-8">
+        {{ expandedPredictorBadge(badgeRiskScores.lowDynamicRiskScore, true) }}
+      </div>
+    </div>
+
+    <div class="govuk-grid-column-one-half">
+      <div class="govuk-!-margin-bottom-4">
+        {{ expandedPredictorBadge(badgeRiskScores.mediumStaticRiskScore, false) }}
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        {{ expandedPredictorBadge(badgeRiskScores.mediumStaticRiskScore, true) }}
+      </div>
+    </div>
+    <div class="govuk-grid-column-one-half">
+      <div class="govuk-!-margin-bottom-4">
+        {{ expandedPredictorBadge(badgeRiskScores.mediumDynamicRiskScore, false) }}
+      </div>
+      <div class="govuk-!-margin-bottom-8">
+        {{ expandedPredictorBadge(badgeRiskScores.mediumDynamicRiskScore, true) }}
+      </div>
+    </div>
+
+    <div class="govuk-grid-column-one-half">
+      <div class="govuk-!-margin-bottom-4">
+        {{ expandedPredictorBadge(badgeRiskScores.highStaticRiskScore, false) }}
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        {{ expandedPredictorBadge(badgeRiskScores.highStaticRiskScore, true) }}
+      </div>
+    </div>
+    <div class="govuk-grid-column-one-half">
+      <div class="govuk-!-margin-bottom-4">
+        {{ expandedPredictorBadge(badgeRiskScores.highDynamicRiskScore, false) }}
+      </div>
+      <div class="govuk-!-margin-bottom-8">
+        {{ expandedPredictorBadge(badgeRiskScores.highDynamicRiskScore, true) }}
+      </div>
+    </div>
+
+    <div class="govuk-grid-column-one-half">
+      <div class="govuk-!-margin-bottom-4">
+        {{ expandedPredictorBadge(badgeRiskScores.veryHighStaticRiskScore, false) }}
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        {{ expandedPredictorBadge(badgeRiskScores.veryHighStaticRiskScore, true) }}
+      </div>
+    </div>
+    <div class="govuk-grid-column-one-half">
+      <div class="govuk-!-margin-bottom-4">
+        {{ expandedPredictorBadge(badgeRiskScores.veryHighDynamicRiskScore, false) }}
+      </div>
+      <div class="govuk-!-margin-bottom-8">
+        {{ expandedPredictorBadge(badgeRiskScores.veryHighDynamicRiskScore, true) }}
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

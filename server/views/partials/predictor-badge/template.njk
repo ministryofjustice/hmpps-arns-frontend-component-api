@@ -1,0 +1,26 @@
+{% if predictor %}
+
+  {% set badgeClass = '' %}
+  {% switch predictor.level %}
+  {% case 'VERY_HIGH' %}
+    {% set badgeClass = 'predictor-badge--very-high' %}
+  {% case 'HIGH' %}
+    {% set badgeClass = 'predictor-badge--high' %}
+  {% case 'MEDIUM' %}
+    {% set badgeClass = 'predictor-badge--medium' %}
+  {% case 'LOW' %}
+    {% set badgeClass = 'predictor-badge--low' %}
+  {% endswitch %}
+
+  <div class="{{ badgeClass }}">
+    <span
+      class="predictor-badge__type_and_level">{{ predictor.type | upper }} <strong>{{ predictor.level | replace('_', ' ') }}</strong></span>
+
+    {% if showScore %}
+      <span class="predictor-badge__score">{{ predictor.score }}%</span>
+    {% endif %}
+
+    <span class="predictor-badge__static_or_dynamic">{{ predictor.staticOrDynamic | capitalize }}</span>
+
+  </div>
+{% endif %}

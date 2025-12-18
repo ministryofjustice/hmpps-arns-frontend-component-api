@@ -50,4 +50,14 @@ describe('View Snapshot Tests: All Pages', () => {
     const response = await request(app).get('/rosh-widget').expect(200)
     expect(response.text).toMatchSnapshot()
   })
+
+  it('should match snapshot for the predictor badge page (/predictor-badge)', async () => {
+    const response = await request(app).get('/predictor-badge').expect(200)
+    expect(response.text).toMatchSnapshot()
+  })
+
+  it('should match snapshot for the expanded predictor badge page (/expanded-predictor-badge)', async () => {
+    const response = await request(app).get('/expanded-predictor-badge').expect(200)
+    expect(response.text).toMatchSnapshot()
+  })
 })
