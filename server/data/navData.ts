@@ -33,6 +33,10 @@ const rawNavSections: NavSection[] = [
         text: 'Expanded predictor badge',
         href: '/expanded-predictor-badge',
       },
+      {
+        text: 'Predictor scale',
+        href: '/predictor-scale',
+      },
     ],
   },
   {

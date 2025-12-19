@@ -1,0 +1,13 @@
+<div class="scale-marker__card">
+    <div class="scale-marker__card-top">
+        <h3>{{ predictorScore.level | replace("_", " ") }}</h3>
+    </div>
+    {% if showScore and predictorScore.score %}
+    <div class="scale-marker__card-bottom">
+        <p>{{ predictorScore.score }}%</p>
+    </div>
+    <div class="scale-marker__card-pointer"></div>
+    {% else %}
+    <div class="scale-marker__card-pointer scale-marker__card-pointer--white"></div>
+    {% endif %}
+</div>

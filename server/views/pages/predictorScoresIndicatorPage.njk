@@ -18,13 +18,13 @@
   </div>
   <div id="predictor-scores-indicator-wrapper" class="govuk-grid-row">
     <div id="predictor-scores-indicator" class="govuk-grid-column-one-third">
-      {{ predictorIndicator(riskScores.current.scores.RSR) }}
+      {{ predictorIndicator(legacyComponentRiskScores.current.scores.RSR) }}
     </div>
     <div id="predictor-scores-indicator" class="govuk-grid-column-one-third">
-      {{ predictorIndicator(riskScores.current.scores.OSPDC) }}
+      {{ predictorIndicator(legacyComponentRiskScores.current.scores.OSPDC) }}
     </div>
     <div id="predictor-scores-indicator" class="govuk-grid-column-one-third">
-      {{ predictorIndicator(riskScores.current.scores.OSPIIC) }}
+      {{ predictorIndicator(legacyComponentRiskScores.current.scores.OSPIIC) }}
     </div>
   </div>
 {% endblock %}

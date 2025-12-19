@@ -20,17 +20,17 @@
     </div>
     <div class="govuk-grid-column-full">
       <h2 class="govuk-heading-l score-header">RSR score</h2>
-      {{ predictorScore(riskScores.current.scores.RSR) }}
+      {{ predictorScore(legacyComponentRiskScores.current.scores.RSR) }}
     </div>
   </div>
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-one-half">
       <h2 class="govuk-heading-l score-header">OSP/DC score</h2>
-      {{ predictorScore(riskScores.current.scores.OSPDC) }}
+      {{ predictorScore(legacyComponentRiskScores.current.scores.OSPDC) }}
     </div>
     <div class="govuk-grid-column-one-half">
       <h2 class="govuk-heading-l score-header">OSP/IIC score</h2>
-      {{ predictorScore(riskScores.current.scores.OSPIIC) }}
+      {{ predictorScore(legacyComponentRiskScores.current.scores.OSPIIC) }}
     </div>
   </div>
 {% endblock %}
