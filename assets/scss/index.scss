@@ -4,17 +4,15 @@ $path: "/assets/images/";
 $moj-page-width: 1170px;
 $govuk-page-width: $moj-page-width;
 
-@import "govuk-frontend/dist/govuk/index";
+@use '@ministryofjustice/hmpps-arns-frontend-components-lib/dist/all';
+@use 'partials/header-bar';
+@use 'partials/example';
+@use './overrides/local';
+
+@use "partials/risk/mappa-widget";
+@use "partials/risk/risk-flag-widget";
+@use "partials/risk/rosh-widget";
+@use "partials/risk/detailed-risk-predictor-scores-example";
+@use "partials/risk/intro-page";
+
 @import "@ministryofjustice/frontend/moj/all";
-@import "@ministryofjustice/hmpps-arns-frontend-components-lib/dist/all";
-
-@import 'partials/header-bar';
-@import 'partials/example';
-@import './overrides/local';
-
-@import "partials/risk/mappa-widget";
-@import "partials/risk/risk-flag-widget";
-@import "partials/risk/rosh-widget";
-@import "partials/risk/detailed-risk-predictor-scores-example";
-@import "partials/risk/intro-page";
-
